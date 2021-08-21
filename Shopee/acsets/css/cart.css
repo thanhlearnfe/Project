@@ -1,0 +1,128 @@
+.footer-contant {
+    padding: 64px 16px;
+    text-align: center;
+    font-size: 24px;
+    color: #afa5a5;
+    margin-top: 0%;
+}
+.cart-thanh-toan {
+    background: #328686;
+    /* margin-top: 120px; */
+    position: absolute;
+    width: 80%;
+    
+    margin-top: 120px;
+    margin-left: 10%;
+}
+.trademark {
+    justify-content: center;
+}
+.trademark-cart{
+    background-color: blueviolet;
+}
+#showcart {
+    background: #fff;
+    width: 60%;
+    margin-top: 90px;
+    left: 0;
+    margin-left: 10%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.header{
+    z-index: 99999;
+}
+
+td div{
+    text-align: center;
+    width: initial;
+}
+th div{
+    text-align: center;
+    width: initial;
+}
+.body__cart {
+    display: flex;
+    margin-top: 120px;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+}
+.trangchu {
+    
+    background: #000;
+    width: 70%;
+    margin: 0 15%;
+    display: flex;
+}
+a.trangchulink {
+    text-decoration: none;
+    font-size: 15px;
+    padding: 2%;
+    color: #fff;
+   
+    font-family: serif;
+}
+a.trangchulink:hover{
+    background-color: #ccc;
+    color: black;
+    border-left: 1px solid;
+}
+.thanhtoan {
+    width: 70%;
+    margin: 0 15%;
+    background: whitesmoke;
+   
+}
+.thongtin-nhanhang {
+    width: 70%;
+    margin: 0% 15%;
+   
+    background: whitesmoke;
+    padding-left: 2%;
+}
+.thongtin-nhanhang__items {
+    margin-left: 13%;
+}
+.footer-contant {    
+    background: black;
+}
+p.thongtin-nhanhang__header {
+    font-size: 20px;
+    color: #0fc3eb;
+    font-family: 'themify';
+    padding-left: 5%;
+}
+input.thongtin-nhanhang__input {
+    font-size: 13px;
+    width: 50%;
+    padding: 7px;
+    border: 1px solid;
+    border-radius: 4px;
+}
+p.thongtin-nhanhang__item-text {
+    font-size: 15px;
+    font-family: 'Font Awesome 5 Brands';
+    margin-bottom: 5px;
+}
+.thongtin-nhanhang__button{
+    background: #ccc;
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    border: 1px solid;
+    margin-top: 20px;
+    margin-bottom: 5%;
+}
+th {
+    background-color: #fc5c32;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'themify';
+}
+td {
+    font-size: 15px;
+    font-family: auto;
+}
