@@ -427,7 +427,7 @@ li.nav__item-menu-home-contact-li:hover{
 }
 .first-body-img{
     padding-top: 39%;
-    background: url('/acsset/img/banner-games-01.webp') top center/ cover no-repeat;
+    background: url('../img/banner-games-01.webp') top center/ cover no-repeat;
     display: flex;
     height: 0;
     flex-direction: column-reverse;
@@ -441,7 +441,7 @@ li.nav__item-menu-home-contact-li:hover{
 }
 .first-body-img-se{
     padding-top: 39%;
-    background: url('/acsset/img/banner-games-02.webp') top center/ cover no-repeat;
+    background: url('../img/banner-games-02.webp') top center/ cover no-repeat;
     display: flex;
     height: 0;
     flex-direction: column-reverse;
@@ -453,7 +453,7 @@ li.nav__item-menu-home-contact-li:hover{
 }
 .first-body-img-th{
     padding-top: 39%;
-    background: url('/acsset/img/banner-games-03.webp') top center/ cover no-repeat;
+    background: url('../img/banner-games-03.webp') top center/ cover no-repeat;
     display: flex;
     height: 0;
     flex-direction: column-reverse;
