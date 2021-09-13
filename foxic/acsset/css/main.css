@@ -254,7 +254,7 @@ li.nav__item-menu-home-contact-li:hover{
 }
 .background{
     padding-top: 37.5%;
-    background:rgba(0,0,0,0.25) url('/acsset/css/video-screen.webp') top center/ cover no-repeat;
+    background:rgba(0,0,0,0.25) url('/acsset/img/slider/product-10-1.webp') top center/ cover no-repeat;
     background-blend-mode: darken;
 }
 .background-center{
