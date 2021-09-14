@@ -61,13 +61,13 @@ i.fas.fa-chevron-down.nav__item-icon-down {
     background: red;
     font-size: 10px;
     margin-left: 24px;
-    padding: 3px;
+    padding: 3px 5px 0px 4px;
     margin-top: 22px;
     border-radius: 2px;
-    font-family: emoji;
-    font-weight: bold;
+    font-family: 'Montserrat';
+    font-weight: 600;
     line-height: 1;
-    top: 0;
+    top: 0px;
     right: 47%;
     color: white;
 }
@@ -179,16 +179,19 @@ i.ti-angle-right.nav__item-menu-home-contact-right {
 .nav__item-menu-home-contact-li-span-new-yellow{
     background-color: rgb(221, 198, 69);
     margin-left: 7%;
-    padding: 4px;
+    padding: 4px ;
     font-size: 10px;
-    font-weight: 900;
+    font-weight: 600;
+    border-radius: 3px;
 }
 .nav__item-menu-home-contact-li-span-new {
     background: red;
     margin-left: 7%;
-    padding: 4px;
+    padding: 3px 5px;
+    padding-bottom: 2px;
+    border-radius: 3px;
     font-size: 10px;
-    font-weight: 900;
+    font-weight: 600;
 }
 .nav__items-menu-home::after{
     content: "";
@@ -352,7 +355,7 @@ li.nav__item-menu-home-contact-li:hover{
     display: none;
 }
 .nav__item-show-game-header {
-    font-size: 23px;
+    font-size: 20px;
     color: white;
     font-family:'Montserrat';
     font-weight: 600;
@@ -374,7 +377,7 @@ li.nav__item-menu-home-contact-li:hover{
 }
 .nav__item-show-game-body-contact {
     margin-left: 53%;
-    margin-top: 20px;
+    margin-top: 33px;
 }
 .nav__item-show-game-body-contact-a:hover{
     color: red;
@@ -389,8 +392,8 @@ li.nav__item-menu-home-contact-li:hover{
     align-items: center;
     color: white;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: 900;
+    font-size: 16px;
+    font-weight: 600;
 }
 .nav__item-menu-home-contact-body-category-page:hover .nav__item-menu-home-contact-li-page-ul{
     display: block;
