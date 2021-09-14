@@ -630,6 +630,7 @@ rect {
 .footer__contact-phone-header {
     font-size: 17px;
     font-weight: 600;
+    margin-top: 0;
 }
 .footer__contact-phone-text {
     font-size: 14px;
