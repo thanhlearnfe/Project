@@ -605,3 +605,34 @@ rect {
 .footer__sub-container-email:hover svg rect{
     stroke-dashoffset: 800%;
 }
+.footer__contact {
+    /* column-count: 3; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    padding-top: 89px;
+}
+.footer__contact-mess {
+    display: flex;
+    /* flex-grow: 3; */
+    flex: 0 1 33.333%;
+    margin-top: 10px;
+}
+.footer__contact-mess-icon{
+    font-size: 44px;
+    color: #eae5ef8c;
+}
+.footer__contact-phone {
+    padding-left: 20px;
+}
+.footer__contact-phone-header {
+    font-size: 17px;
+    font-weight: 600;
+}
+.footer__contact-phone-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
