@@ -327,7 +327,7 @@ li.nav__item-menu-home-contact-li:hover{
     position: absolute;
     width: 100%;
     left: 0;
-    margin-top: 88px;
+    margin-top: 77px;
     background: #1b1b1b;
     z-index: 1;
     display: none;
@@ -353,7 +353,7 @@ li.nav__item-menu-home-contact-li:hover{
 }
 .nav__item-show-game-body {
     margin: 30px 10px;
-    padding-top: 20px;
+    padding-top: 5px;
 }
 .nav__item-show-game-body-img {
     display: flex;
@@ -379,10 +379,11 @@ li.nav__item-menu-home-contact-li:hover{
     display: none;
 }
 .nav__item-show-game-header {
-    font-size: 20px;
+    font-size: 19px;
     color: white;
     font-family:'Montserrat';
     font-weight: 600;
+    margin-bottom: 0;
 }
 .nav__item-show-game-header:hover{
     color: red;
