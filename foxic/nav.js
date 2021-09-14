@@ -9,7 +9,23 @@ function scrollFunction() {
     document.getElementById("navbar").style.top = "-100%";
   }
 }
-
+// Back to top
+  $(document).ready(function(){
+    $(window).scroll(function(){
+      if($(this).scrollTop()>400){
+        document.getElementById("backtotop").style.display="flex";
+        $('#backtotop').fadeIn();
+      }
+      else{
+        $('#backtotop').fadeOut();
+      }
+    });
+    $("#backtotop").click(function(){
+      $('html,body').animate({scrollTop:0},500);
+    });
+    
+  });
+  
 //show lan
 function showlan(){
   var x=document.getElementById("hiddenlan");

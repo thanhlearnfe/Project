@@ -16,6 +16,30 @@ header{
     position: fixed;
     z-index: 100;
 }
+#backtotop {
+    position: fixed;
+    background-color: rgb(245, 36, 36);
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 13px;
+    z-index: 10000;
+    bottom: 15%;
+    display: none;
+    cursor: pointer;
+}
+#backtotop:hover{
+    background-color: black;
+    border: 1px solid rgb(245, 36, 36);
+}
+.back-to-top-icon{
+    color: #fff;
+    font-size: 22px;
+}
+
 .header__body {
     display: flex;
     align-items: center;
@@ -536,6 +560,7 @@ li.nav__item-menu-home-contact-li:hover{
     border-radius: 5px;
     height: 67px;
     margin-top: 20px;
+    cursor: pointer;
 }
 button.btn-footer-form:hover{
     color: #000;
