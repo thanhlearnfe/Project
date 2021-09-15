@@ -56,6 +56,14 @@
     svg.footer__sub-container-email-animation{
         display: none;
     }
+    .footer__contact-mess{
+        flex: 0 1 45%;
+    }
+    .footer__contact-mess-icon {
+        font-size: 36px;
+        color: #eae5ef8c;
+        flex: 0 0 50px;
+    }
 }
 @media(max-width:769px){
     
@@ -90,6 +98,9 @@
         padding: 20px 0;
         color: #fff;
     }
+    .footer__contact {
+        padding-top: 35px;
+    }
 }
 @media(max-width:576px){
     .background{
@@ -122,6 +133,9 @@
     }
     .first-body-text-footer {
         font-size: 17px;
+    }
+    .footer__contact-mess{
+        flex: 1 1 65%;
     }
 }
 
