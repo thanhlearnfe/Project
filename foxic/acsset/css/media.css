@@ -38,6 +38,7 @@
     }
 }
 @media(max-width:769px){
+    
     .background-center-text {
         font-size: 30.5px;
     }
@@ -107,7 +108,7 @@
         display: none;
     }
 }
-@media(max-width:500px){
+@media(max-width:476px){
 
     img.logo__img{
         width: 120px;
@@ -158,5 +159,13 @@
     }
     .slider-col3-1 {
         width: 100% !important;
+    }
+    button.slick-next.slick-next-col3.slick-arrow {
+        left: 94% !important;
+        top: -30px !important;
+    }
+    button.slick-prev.slick-prev-col3.slick-arrow {
+        top: -30px !important;
+        left: 86% !important;
     }
 }
