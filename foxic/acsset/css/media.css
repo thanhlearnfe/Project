@@ -87,6 +87,31 @@
         font-size: 17px;
     }
 }
+@media(max-width:376px){
+    img.logo__img{
+        width: 120px;
+    }
+    .background-center {
+        left: 10%;
+        top: 83px;
+    }
+    .background-center-text {
+        margin-bottom: 10px;
+    }
+    .background-center-span {
+        font-weight: 600;
+        margin-left: 25%;
+    }
+    .first-body-text-header {
+        font-size: 10px;
+    }
+    .first-body-text-body {
+        font-size: 25px;
+    }
+    .first-body-text-footer {
+        font-size: 13px;
+    }
+}
 @media(max-width:1200px){
     .footer__sub-container-sale-title {
         font-size: 60px;
