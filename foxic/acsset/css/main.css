@@ -600,7 +600,7 @@ rect {
     stroke-width: 4px;
     stroke-dasharray:  400%;
     stroke-dashoffset: 400%;
-    transition:  1.5s;
+    transition:  1s;
 }
 .footer__sub-container-email:hover svg rect{
     stroke-dashoffset: 800%;
