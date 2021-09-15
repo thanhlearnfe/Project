@@ -637,3 +637,51 @@ rect {
     font-weight: 400;
     line-height: 20px;
 }
+footer{
+    background-color: #1e171b;
+    display: flex;
+}
+.footer__info{
+    margin-top: 40px;
+}
+.footer__info-header-img{
+    width: 175px;
+    margin-bottom: 25px;
+}
+.footer__info-text {
+    font-size: 15px;
+    color: #bbb3b8;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 27px;
+}
+.footer__info-header {
+    padding: 0 15px;
+}
+.footer__info-header-text {
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 25px;
+}
+.footer__info-border-icon {
+    width: 44px;
+    height: 44px;
+    background: #bbb3b8;
+    background-color: #251e22 ;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    margin-bottom: 10px;
+}
+.footer__info-border-icon-child{
+    color: #bbb3b8;
+    font-size: 18px;
+}
+.footer__info-border-icon-farther{
+    display: flex;
+    flex-wrap: wrap;
+}
