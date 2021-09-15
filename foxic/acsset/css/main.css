@@ -677,9 +677,16 @@ footer{
     margin: 0 5px;
     margin-bottom: 10px;
 }
+.footer__info-border-icon:hover{
+    background-color: #f52424;
+}
 .footer__info-border-icon-child{
     color: #bbb3b8;
     font-size: 18px;
+    
+}
+.footer__info-border-icon:hover .footer__info-border-icon-child{
+    color: #fff;
 }
 .footer__info-border-icon-farther{
     display: flex;
