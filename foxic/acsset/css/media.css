@@ -32,7 +32,7 @@
     }
     .icon{
         padding-top: 0;
-        margin-top: 0;
+        margin-top: 5px;
     }
     .first-body-text {
         margin-bottom: 5%;
@@ -149,11 +149,13 @@
         width: 120px;
     }
     .background-center {
-        left: 10%;
+        left: 5%;
+        right: 5%;
         top: 83px;
     }
     .background-center-text {
         margin-bottom: 10px;
+        text-align: center;
     }
     .background-center-span {
         font-weight: 600;
