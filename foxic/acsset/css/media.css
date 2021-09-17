@@ -2,6 +2,18 @@
     .footer__sub-container-sale-title {
         font-size: 60px;
     }
+    footer {
+        flex-wrap: wrap;
+    }
+    .footer__info {
+        width: 33.33%;
+    }
+    .footer__info-col5 {
+        margin-left: 0;
+    }
+    .footer__info-header {
+        max-width: 240px;
+    }
 }
 @media(max-width:1112px){
     .background-center {
@@ -100,6 +112,9 @@
     }
     .footer__contact {
         padding-top: 35px;
+    }
+    .footer__info {
+        width: 49.33%;
     }
 }
 @media(max-width:576px){
