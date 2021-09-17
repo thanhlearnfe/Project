@@ -692,3 +692,9 @@ footer{
     display: flex;
     flex-wrap: wrap;
 }
+.footer__info-icon-ama {
+    color: #bbb3b8;
+    margin-right: 20px;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
