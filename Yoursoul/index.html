@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Soul</title>
+    <link rel="stylesheet" href="./style/css/main.css">
+    <link rel="stylesheet" href="./style/css/modal.css">
+    <link rel="stylesheet" href="./style/font/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="./style/font/themify-icons/themify-icons.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header__logo">
+                <p class="header__logo-text">Your Soul</p>
+                <i class="fas fa-film header__logo-icon"></i>
+            </div>
+            <div class="header__search">
+                <input class="header__search-input" type="text" placeholder="Nhập tên phim,diễn viên">
+                <i class="fas fa-search header__search-search"></i>
+            </div>
+            <div class="header__log">
+                <button class="header__log-register js-showlog-too">Đăng Ký</button>
+                <button class="header__log-in js-showlog">Đăng Nhập</button>
+                <!-- Dang ky -->
+                <div class="modal js-modal">
+                    <div class="modal__overlay"></div>
+                    <div class="modal__body"> 
+                        <div class="modal__inner">
+                            <div class="ti-close modal__form-close js-close"></div>
+                            <div class="modal__form">
+                                <h3 class="modal__form-heading">Đăng Nhập</h3>
+                                <div class="modal__form-contact">
+                                    <div class="modal__form-group">
+                                        <input type="text" class="modal__form-input" placeholder="Email/Số điện thoại/Tên đăng nhập">
+                                    </div>
+                                    <div class="modal__form-group">
+                                        <input type="password" class="modal__form-input" placeholder="Mật khẩu">
+                                    </div>
+                                </div>
+                                <div class="modal__form-log">
+                                    <button class="modal__form-log-in">ĐĂNG NHẬP</button>
+                                </div>
+                                <div class="modal__form-forgot">
+                                    <p class="modal__form-forgot-text">Quên mật khẩu</p>
+                                    <p class="modal__form-forgot-text">Đăng nhập với SMS</p>
+                                </div>
+                                <div class="modal__form-or">
+                                    <div class="modal__form-or-space"></div>
+                                    <span class="modal__form-or-text">HOẶC</span>
+                                    <div class="modal__form-or-space"></div>
+                                </div> 
+                                <div class="modal__form-link">
+                                    <a class="modal__form-link-item">
+                                        <i class="ti-facebook modal__form-link-icon">Facebook</i>
+                                    </a>
+                                    <a class="modal__form-link-item">
+                                        <i class="ti-google modal__form-link-icon">Google</i>
+                                    </a>
+                                    <a class="modal__form-link-item">
+                                        <i class="ti-apple modal__form-link-icon">Apple</i>  
+                                    </a>
+                                </div>
+                                <div class="modal__form-footer">
+                                    <p class="modal__form-footer-text">Bạn mới biết đến YourSoul</p>
+                                <button class="modal__form-footer-link js-show-chile-res">Đăng ký</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Dang nhap-->
+                <div class="modal-too js-modal-too">
+                    <div class="modal__overlay"></div>
+                    <div class="modal__body"> 
+                    <div class="modal__inner">
+                        <div class="ti-close modal__form-close js-close-too"></div>
+                        <div class="modal__form">
+                            <h3 class="modal__form-heading">Đăng Ký</h3>
+                            <div class="modal__form-contact">
+                                <div class="modal__form-group">
+                                    <input type="text" class="modal__form-input" placeholder="Email/Số điện thoại/Tên đăng nhập">
+                                </div>
+                                <div class="modal__form-group">
+                                    <input type="password" class="modal__form-input" placeholder="Mật khẩu">
+                                </div>
+                                <div class="modal__form-group">
+                                    <input type="password" class="modal__form-input" placeholder="Nhập lại mật khẩu">
+                                </div>
+                            </div>
+                            <div class="modal__form-log">
+                                <button class="modal__form-log-in">ĐĂNG KÝ</button>
+                            </div>
+                            <div class="modal__form-link">
+                                <a class="modal__form-link-item">
+                                    <i class="ti-facebook modal__form-link-icon">Facebook</i>
+                                </a>
+                                <a class="modal__form-link-item">
+                                    <i class="ti-google modal__form-link-icon">Google</i>
+                                </a>
+                                <a class="modal__form-link-item">
+                                    <i class="ti-apple modal__form-link-icon">Apple</i>  
+                                </a>
+                            </div>
+                            <div class="modal__form-footer">
+                                <p class="modal__form-footer-text">Bạn đã biết đến  YourSoul?</p>
+                                <button class="modal__form-footer-link js-modal-child">Đăng nhập</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                </div>
+            </div>
+        </div>
+        <div class="header__nav">
+            <div class="header__nav-home">
+                <i class="fas fa-home"></i>
+            </div>
+            <div class="header__nav-home">
+                <p class="header__nav-home-sub">THỂ LOẠI</p>
+                <i class="fas fa-sort-down"></i>
+            </div>
+            <div class="header__nav-home">
+                <p class="header__nav-home-sub">QUỐC GIA</p>
+                <i class="fas fa-sort-down"></i>
+            </div>
+            <div class="header__nav-home">
+                <p class="header__nav-home-sub">PHIM LẺ</p>
+                <i class="fas fa-sort-down"></i>
+            </div>
+            <div class="header__nav-home">
+                <p class="header__nav-home-sub">PHIM BỘ</p>
+                <i class="fas fa-sort-down"></i>
+            </div>
+            <div class="header__nav-home">
+                <p class="header__nav-home-sub">PHIM MỚI</p>
+            </div>
+        </div>
+    </header>
+    <video controls>
+        <source src="./style/video/theflash.mp4"  type="video/ogg"> 
+    </video>
+    <script src="./modal.js"></script>
+</body>
+</html>
