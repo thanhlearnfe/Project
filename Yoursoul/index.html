@@ -25,7 +25,7 @@
             <div class="header__log">
                 <button class="header__log-register js-showlog-too">Đăng Ký</button>
                 <button class="header__log-in js-showlog">Đăng Nhập</button>
-                <!-- Dang ky -->
+                  <!--Dang nhap-->
                 <div class="modal js-modal">
                     <div class="modal__overlay"></div>
                     <div class="modal__body"> 
@@ -33,17 +33,18 @@
                             <div class="ti-close modal__form-close js-close"></div>
                             <div class="modal__form">
                                 <h3 class="modal__form-heading">Đăng Nhập</h3>
-                                <div class="modal__form-contact">
+                                <form class="modal__form-contact" id="form-login">
                                     <div class="modal__form-group">
-                                        <input type="text" class="modal__form-input" placeholder="Email/Số điện thoại/Tên đăng nhập">
+                                        <input type="text" class="modal__form-input" id="username" placeholder="Email/Số điện thoại/Tên đăng nhập">
                                     </div>
                                     <div class="modal__form-group">
-                                        <input type="password" class="modal__form-input" placeholder="Mật khẩu">
+                                        <input type="password" class="modal__form-input" id="password" placeholder="Mật khẩu">
                                     </div>
-                                </div>
-                                <div class="modal__form-log">
-                                    <button class="modal__form-log-in">ĐĂNG NHẬP</button>
-                                </div>
+                                    <div class="modal__form-log">
+                                        <button class="modal__form-log-in" type="submit">ĐĂNG NHẬP</button>
+                                    </div>
+                                </form>
+                                
                                 <div class="modal__form-forgot">
                                     <p class="modal__form-forgot-text">Quên mật khẩu</p>
                                     <p class="modal__form-forgot-text">Đăng nhập với SMS</p>
@@ -72,7 +73,8 @@
                         </div>
                     </div>
                 </div>
-                <!--Dang nhap-->
+                <!-- Dang ky -->
+              
                 <div class="modal-too js-modal-too">
                     <div class="modal__overlay"></div>
                     <div class="modal__body"> 
@@ -116,6 +118,7 @@
                 </div>
             </div>
         </div>
+        <!-- Header Nav -->
         <div class="header__nav">
             <div class="header__nav-home">
                 <i class="fas fa-home"></i>
@@ -145,8 +148,10 @@
         </div>
     </header>
     <video autoplay controls>
-        <source src="./style/video/theflash.mp4"  type="video/ogg"> 
+        <source src="./indexchild/video/theflash.mp4"  type="video/ogg"> 
+        <source src="./" type="">
     </video>
-    <script src="./modal.js"></script>
+    <script src="./javascript/modal.js"></script>
+    <script src="./javascript/signin.js"></script>
 </body>
 </html>
