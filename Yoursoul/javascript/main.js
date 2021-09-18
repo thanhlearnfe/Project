@@ -4,3 +4,10 @@ $('.banner').slick({
   autoplay: true,
   autoplaySpeed: 2000,
   });
+
+
+  $('.slider__col1-fa').slick({
+    slidesToShow: 3,
+  slidesToScroll: 1,
+  
+  });

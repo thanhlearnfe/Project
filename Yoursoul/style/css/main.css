@@ -4,6 +4,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+a:hover{
+    text-decoration: none;
+}
 p{
     margin: 0;
 }
@@ -97,12 +100,20 @@ header{
     color: #aaaaaa;
     background-color: rgb(43, 74, 109);
 }
+.banner-slider {
+    display: flex;
+    width: 70%;
+    float: left;
+    flex-direction: column;
+}
 .banner{
-    padding: 0 5%;
+    padding: 3% 5%;
     padding-right: 0;
+    width: 100%;
+    float: left;
 }
 .banner__img{
-    width: 70% !important;
+    width: 100% !important;
     display: flex;
 }
 .banner__img-child {
@@ -110,10 +121,10 @@ header{
 }
 button.slick-next.slick-arrow {
     position: absolute;
-    right: 30%;
-    font-size: 32px;
-    /* width: 18px; */
+    right: 2%;
+  
 }
+
 button.slick-prev.slick-arrow{
     z-index: 1;
     left: 5%;
@@ -125,4 +136,76 @@ button.slick-prev.slick-arrow{
 .slick-next:before {
     content: '→';
     font-size: 35px;
+}
+.topmonth{
+    float: left;
+    width: 30%;
+    display: flex;    
+    flex-direction: column;
+}
+.topmonth__body {
+   text-align: center;
+   margin-bottom: 15px;
+}
+.topmonth__body:hover{
+    cursor: pointer;
+  
+}
+.topmonth__body-footer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.topmonth-header {
+    font-size: 27px;
+    text-align: center;
+    color: #ffff00c7;
+    font-weight: 900;
+  
+}
+.topmonth__body-img{
+    width: 45%;
+}
+.topmonth__body-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    flex-grow: 3;
+}
+.topmonth__body-eye {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #f0f8ff94;
+    font-weight: 300;
+}
+.topmonth__body-star{
+  
+    color: #c8c849;
+}
+.slider__col1{
+    padding: 0 5%;
+    padding-right: 0;
+}
+.slider__col1-title{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.slider__col1-row1-img {
+    width: 100%;
+}
+.slider__col1-row2-img {
+    width: 96.4%;
+}
+.slider__col1-row3-img {
+    width: 89.3%;
+}
+.slider__col1-row4-img {
+    width: 100.55%;
+}
+.slider__col1-row5-img {
+    width: 101.9%;
+
 }
