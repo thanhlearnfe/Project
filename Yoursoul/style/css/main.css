@@ -4,6 +4,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+p{
+    margin: 0;
+}
 body {
     background: rgb(8 27 39);
     font-family: fangsong;
@@ -13,7 +16,7 @@ header{
 }  
 .header{
     background-color: rgb(63 53 103);
-    padding: 15px 10%;
+    padding: 0px 5%;
     padding-right: 5%;
     display: flex;
     align-items: center;
@@ -78,7 +81,7 @@ header{
     display: flex;
     background: #142631;
     color: #fff;
-    padding: 0px 10%;
+    padding: 0px 5%;
     padding-right: 5%;
 }
 .header__nav-home {
@@ -94,8 +97,32 @@ header{
     color: #aaaaaa;
     background-color: rgb(43, 74, 109);
 }
-
-video {
-    width: 70%;
-    margin-left: 10%;
-        }
+.banner{
+    padding: 0 5%;
+    padding-right: 0;
+}
+.banner__img{
+    width: 70% !important;
+    display: flex;
+}
+.banner__img-child {
+    width: 100%;
+}
+button.slick-next.slick-arrow {
+    position: absolute;
+    right: 30%;
+    font-size: 32px;
+    /* width: 18px; */
+}
+button.slick-prev.slick-arrow{
+    z-index: 1;
+    left: 5%;
+}
+.slick-prev:before {
+    content: '←';
+    font-size: 35px;
+}
+.slick-next:before {
+    content: '→';
+    font-size: 35px;
+}

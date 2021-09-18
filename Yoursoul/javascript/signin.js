@@ -17,9 +17,13 @@ function onFormSubmit(e) {
     var password = inputPassword.value;
 
     if(username == CORRECT_USER && password == CORRECT_PASSWORD) {
-        window.location = './indexchild/test.html';
+        window.location = './indexchild/test.html';// truy cập đên cửa sổ mới
     } else {
-        alert('sa')
+        var divErrors = document.getElementById('errors');
+        divErrors.innerHTML =   '<div class="alert alert-danger">' +
+                                    '<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' +
+                                    '<strong>Có lỗi xảy ra:</strong> Tên đăng nhập hoặc mật khẩu không đúng!' +
+                                '</div>';
     }
 
     return false;
