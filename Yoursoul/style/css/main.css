@@ -209,3 +209,22 @@ button.slick-prev.slick-arrow{
     width: 101.9%;
 
 }
+/* .slick-prev:before, .slick-next:before{
+    font-family: fontawesome;
+    font-size: 30px;
+    color: #fff;
+}
+.slick-prev:before{
+    content:'\f100';
+}
+.slick-next:before{
+    content:'\f054';
+} */
+button.slick-prev.slick-prev-col2.slick-arrow {
+    top: -10%;
+    left: 42%;
+}
+button.slick-next.slick-next-col2.slick-arrow {
+    top: -10%;
+    right: 42%;
+}
