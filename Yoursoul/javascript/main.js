@@ -1,4 +1,5 @@
 $('.banner').slick({
+  
     slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
@@ -7,6 +8,7 @@ $('.banner').slick({
 
 
   $('.slider__col1-fa').slick({
+   
     slidesToShow: 3,
   slidesToScroll: 1,
   speed:300,
