@@ -4,6 +4,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+a{
+    color: #000;
+}
 a:hover{
     text-decoration: none;
 }
@@ -99,8 +102,7 @@ header{
     display: flex;
     margin-right: 10px;
     font-size: 16px;
-    /* align-items: center; */
-    /* font-weight: 500; */
+   color: #fff;
     padding: 15px 10px;
 }
 .header__nav-home:hover{
@@ -120,6 +122,33 @@ header{
     padding-right: 0;
     width: 100%;
     float: left;
+}
+.banner-aqua{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.banner__footer-epis {
+    margin-top: 10px;
+}
+.banner__footer-epi {
+    padding: 5px 8px;
+    background: rgb(192, 47, 88);
+    border-radius: 4px;
+    cursor: pointer;
+}
+i.fas.fa-angle-double-right{
+    font-size: 10px;
+    color: #bbbbbb;
+}
+.banner__body{
+    margin-left: 5%;
+    color: rgb(47 113 169 / 65%);
+    font-size: 18px;
+    padding: 6px 0px;
+}
+.banner__footer {
+    padding-left: 5%;
+    font-size: 20px;
 }
 .banner__img{
     width: 100% !important;
@@ -160,11 +189,12 @@ button.slick-prev.slick-arrow{
     flex-direction: column;
     padding: 30px;
     color: #bbbbbb;
-    font-size: 20px;
+    font-size: 16px;
 }
 .topmonth__contact-header{
 font-size: 25px;
 color: #fff;
+text-align: center;
 }
 .topmonth__body {
    text-align: center;
@@ -320,4 +350,37 @@ li.tag-item {
     background: #21323d;
     margin-left: 5px;
     border-radius: 4px;
+}
+.comment {
+    background: #fff;
+    margin-left: 5%;
+    margin-top: 15px;
+    width: 95%;
+    height: 300px;
+    padding: 10px;
+}
+.comment__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+p.comment__header-text{
+    color: #000;
+    font-weight: 900;
+    font-size: 16px;
+}
+.comment__body-head{
+    display: flex;
+}
+.comment__body-head-img{
+    width: 45px;
+    height: 45px;
+}
+.comment__body-head-comment{
+    width: 100%;
+    margin-left: 10px;
+    padding: 10px 5px;
+    padding-bottom: 25px;
+    outline: none;
+    font-size: 16px;
 }
