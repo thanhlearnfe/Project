@@ -15,7 +15,7 @@ p{
 }
 body {
  /*    background: rgb(8 27 39); */
-    background-color: #000;
+    background-color: #1d1d1d;
     font-family: fangsong;
 }
 .body{
@@ -152,6 +152,20 @@ button.slick-prev.slick-arrow{
     display: flex;    
     flex-direction: column;
 }
+.topmonth__contact{
+    background: #1d1d1d;
+    float: left;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    color: #bbbbbb;
+    font-size: 20px;
+}
+.topmonth__contact-header{
+font-size: 25px;
+color: #fff;
+}
 .topmonth__body {
    text-align: center;
    margin-bottom: 15px;
@@ -249,7 +263,7 @@ a.slider__col1-row1-link {
 }
 button.slick-prev.slick-prev-col2.slick-arrow {
     top: -8%;
-    left: 45%;
+    left: 46%;
 }
 button.slick-prev.slick-prev-col2.slick-arrow::before{
     background-color: transparent;
@@ -257,7 +271,7 @@ button.slick-prev.slick-prev-col2.slick-arrow::before{
 }
 button.slick-next.slick-next-col2.slick-arrow {
     top: -8%;
-    right: 45%;
+    right: 46%;
 }
 button.slick-next.slick-next-col2.slick-arrow::before{
     background-color: transparent;
