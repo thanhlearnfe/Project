@@ -5,10 +5,11 @@
     box-sizing: border-box;
 }
 a{
-    color: #000;
+    color: #fff;
 }
 a:hover{
     text-decoration: none;
+    color: #000;
 }
 ul{
     list-style: none;
@@ -104,12 +105,13 @@ header{
     font-size: 16px;
    color: #fff;
     padding: 15px 10px;
+    cursor: pointer;
 }
-.header__nav-home:hover{
+/* .header__nav-home:hover{
     cursor: pointer;
     color: #aaaaaa;
     background-color: rgb(43, 74, 109);
-}
+} */
 
 .banner-slider {
     display: flex;
@@ -356,7 +358,6 @@ li.tag-item {
     margin-left: 5%;
     margin-top: 15px;
     width: 95%;
-    height: 300px;
     padding: 10px;
 }
 .comment__header {
@@ -371,6 +372,7 @@ p.comment__header-text{
 }
 .comment__body-head{
     display: flex;
+    margin-bottom: 25px;
 }
 .comment__body-head-img{
     width: 45px;
@@ -383,4 +385,73 @@ p.comment__header-text{
     padding-bottom: 25px;
     outline: none;
     font-size: 16px;
+}
+.comment__body-footer{
+    display: flex;
+    margin-bottom: 13px;
+}
+.comment__body-footer-com{
+    margin-left: 10px;
+}
+.comment__body-footer-com-head{
+    color: #385898;
+    font-size: 18px;
+    font-weight: 800;
+}
+.comment__body-footer-com-body{
+    color: #385898;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.contact-film{
+    border: 1px solid #000;
+    padding: 10px;
+    background: #323237;
+    color: #c1c1c1;
+    margin-left: 5%;
+    font-size: 18px;
+    margin-top: 10px;
+}
+i.fas.fa-tv{
+    color: whitesmoke;
+}
+.header__nav-home-sub-nav{
+    position: absolute;
+    margin-top: 37px;
+    z-index: 1;
+    background-color: #000;
+    display: none;
+}
+.header__nav-home-sub-nav-li{
+padding: 8px 12px;
+}
+.header__nav-home-sub-nav-li:hover{
+    background-color: #666;
+    color: #000;
+}
+.header__nav-home-tl:hover .header__nav-home-sub-nav{
+    display: block;
+}
+#backtotop {
+    position: fixed;
+    background-color: rgb(245, 36, 36);
+    border-radius: 50%;
+    height: 72px;
+    width: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 13px;
+    z-index: 10000;
+    bottom: 15%;
+    display: none;
+    cursor: pointer;
+}
+#backtotop:hover{
+    background-color: black;
+    border: 1px solid rgb(245, 36, 36);
+}
+.back-to-top-icon{
+    color: #fff;
+    font-size: 22px;
 }

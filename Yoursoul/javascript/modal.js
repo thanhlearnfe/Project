@@ -33,3 +33,19 @@ closeLog.addEventListener('click',CloseLog)
 closeLogtooo.addEventListener('click',CloseLogToo)
 linkchild.addEventListener('click',Showlinkchild)
 linkChildlogin.addEventListener('click',Showlinkchildlogin)
+
+$(document).ready(function(){
+    $(window).scroll(function(){
+      if($(this).scrollTop()>400){
+        document.getElementById("backtotop").style.display="flex";
+        $('#backtotop').fadeIn();
+      }
+      else{
+        $('#backtotop').fadeOut();
+      }
+    });
+    $("#backtotop").click(function(){
+      $('html,body').animate({scrollTop:0},500);
+    });
+    
+  });
