@@ -455,3 +455,25 @@ padding: 8px 12px;
     color: #fff;
     font-size: 22px;
 }
+
+@media(max-width:480px){
+    .topmonth{
+        display: none;
+    }
+    .banner-slider{
+        width: 100%;
+    }
+    .banner{
+        width: 100%;
+        padding: 0;
+    }
+    button.slick-prev.slick-arrow{
+        left: 0;
+    }
+    .slider__col1{
+        padding: 0;
+    }
+    .ul-tag{
+        flex-wrap: wrap;
+    }
+}
