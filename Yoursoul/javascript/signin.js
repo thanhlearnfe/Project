@@ -11,13 +11,13 @@ else{
 }
 
 function onFormSubmit(e) {
-    if(e.preventDefault) e.preventDefault();// Ngan hanh dong reload trang
+    if(e.preventDefault) e.preventDefault();// Ngăn hành dong reload trang
 
     var username = inputUsername.value;
     var password = inputPassword.value;
 
     if(username == CORRECT_USER && password == CORRECT_PASSWORD) {
-        window.location = './indexchild/aquaman.html';// truy cập đên cửa sổ mới
+        window.location = './vipindex.html';// truy cập đên cửa sổ mới
     } else {
         var divErrors = document.getElementById('errors');
         divErrors.innerHTML =   
