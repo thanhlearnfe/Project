@@ -30,14 +30,18 @@ var giohang = new Array();
             showcountsp();
 
             //Lưu giá trị lên sesionStorage
-            sessionStorage.setItem("giohang",JSON.stringify(giohang));
+            
+            localStorage.setItem("giohang",JSON.stringify(giohang));
         }
         
         function showcountsp() {
+           
             document.getElementById("countsp").innerHTML = giohang.length;
         }
 
         function showmycart(){
+            var gh = localStorage.getItem("giohang");
+            var giohang = JSON.parse(gh);
             var ttgh="";
             var tong=0;
             for(var i =0;i<giohang.length;i++){
@@ -108,7 +112,7 @@ var giohang = new Array();
     document.getElementById("showcart").style.display="none";
 }
  function showgiohang__trangthanhtoan(){
-    var gh = sessionStorage.getItem("giohang");
+    var gh = localStorage.getItem("giohang");
     var giohang = JSON.parse(gh);
     var ttgh="";
     var tong=0;
