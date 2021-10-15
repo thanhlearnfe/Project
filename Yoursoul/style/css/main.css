@@ -253,7 +253,7 @@ text-align: center;
     letter-spacing: 1px;
     margin-bottom: 20px;
 }
-a.slider__col1-row1-link {
+/* a.slider__col1-row1-link {
    
     align-items: center;
     position: absolute;
@@ -266,7 +266,7 @@ a.slider__col1-row1-link {
     justify-content: center;
     cursor: pointer;
     display: none;
-}
+} */
 .slider__col1-row1:hover a.slider__col1-row1-link{
     display: flex;
 }
