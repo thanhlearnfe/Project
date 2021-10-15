@@ -79,16 +79,22 @@ function searchItem(){
       $(".slider__col1").css({margin:"0"});
     }
   })
+  checkEmpty(element_films);
 
-  
 }
-  // Search
+/* function checkEmpty(element){
+  let count=0;
+  for (let i=0;i<element.length;i++){
+    if(element[i].style.display === 'block'){
+      count++;
+    }
+  }
+  if(count === 0){
+    document.getElementById('showtext').textContent="Phim bạn tìm kiếm hiện không có";
+  }
+  else{
+    document.getElementById('showtext').textContent="";
 
-  /* $(document).ready(function(){
-    $("#filter-search").on("keyup", function() {
-      var value = $(this).val().toLowerCase();
-      $("#gallery div").filter(function() {
-        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-      });
-    });
-  }); */
+  }
+} */
+  

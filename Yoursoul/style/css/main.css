@@ -424,6 +424,7 @@ i.fas.fa-tv{
 }
 .header__nav-home-sub-nav-li{
 padding: 8px 12px;
+display: block;
 }
 .header__nav-home-sub-nav-li:hover{
     background-color: #666;
@@ -482,4 +483,19 @@ padding: 8px 12px;
     padding: 0 5px;
     width: 32%;
     float: left;
+}
+a.slider__col1-row1-link {
+    align-items: center;
+    position: absolute;
+    width: 20.5%;
+    height: 50px;
+    background-color: rgba(255, 0, 0, .6);
+    color: #fff;
+    /* bottom: 33px; */
+    font-size: 20px;
+    justify-content: center;
+    cursor: pointer;
+    display: none;
+    margin-top: -50px;
+    /* z-index: 144; */
 }
