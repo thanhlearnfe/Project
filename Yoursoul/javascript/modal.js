@@ -49,3 +49,46 @@ $(document).ready(function(){
     });
     
   });
+
+
+
+//search
+const search_item =document.getElementById('filter-search');
+const cakes = document.querySelectorAll('.slider__col1-row1');
+search_item.addEventListener('keyup',searchItem);
+const banner =document.getElementById('banner');
+const next =document.querySelector('.slick-next');
+const title = document.querySelectorAll('.slider__col1');
+console.log(title);
+function searchItem(){
+  let valueItem=search_item.value.toLowerCase();
+  Array.from(cakes).forEach(function(ele){
+    let nameItem =ele.lastElementChild.textContent;
+    if(nameItem.toLowerCase().indexOf(valueItem) !== -1){
+      ele.style.display='block';
+      banner.style.display='block';
+      $(".slider__col1-title").css({display:"block"});
+      $(".slider__col1-title").css({margin:"0 0 25px 0"});
+      $(".slider__col1").css({margin:"0 0 75px 0"});
+    }
+    else{
+      ele.style.display='none';
+      banner.style.display='none';
+      $(".slider__col1-title").css({display:"none"});
+      $(".slider__col1-title").css({margin:"0"});
+      $(".slider__col1").css({margin:"0"});
+    }
+  })
+
+  
+}
+  // Search
+
+  /* $(document).ready(function(){
+    $("#filter-search").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $("#gallery div").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+    });
+  }); */

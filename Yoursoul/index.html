@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./style/css/main.css">
+    
 </head>
 <body>
    <!--  <marquee  scrollamount="10" scrolldeplay="100" loop="1" direction="right" style="background-color: #fff;">Hien tai phan mem dang duoc cap nhap ban hay dang hap</marquee> -->
@@ -38,8 +39,8 @@
                 <!-- <p class="header__logo-text">Your Soul</p>
                 <i class="fas fa-film header__logo-icon"></i> -->
             </div>
-            <div class="header__search">
-                <input class="header__search-input" type="text" placeholder="Nhập tên phim,diễn viên">
+            <div class="header__search" id="search">
+                <input class="header__search-input" type="text" placeholder="Nhập tên phim,diễn viên" id="filter-search"/>
                 <i class="fas fa-search header__search-search"></i>
             </div>
             <div class="header__log">
@@ -143,9 +144,9 @@
         </div>
         <!-- Header Nav -->
         <div class="header__nav">
-            <div class="header__nav-home">
+            <a href="#" class="header__nav-home">
                 <i class="fas fa-home"></i>
-            </div>
+            </a>
             
             <div class="header__nav-home header__nav-home-tl">
                 <p class="header__nav-home-sub">THỂ LOẠI</p>
@@ -190,7 +191,7 @@
 
         <div class="banner-slider">
 
-            <div class="banner">
+            <div class="banner" id=banner>
                 <a href="./indexchild/jorn-wich.html" class="banner__img">
                     <img src="./style/img/banner/baner5.jpg" alt="" class="banner__img-child">
                 </a>
@@ -210,33 +211,39 @@
             </div>  
             <!-- Hành Động --> 
             <div class="slider__col1" id="action">
-                <p class="slider__col1-title">Hành Động</p>
-                <div class="slider__col1-fa">
-
-                    <div class="slider__col1-row1">
-                        <img src="./style/img/action/avengers-end game.jpg" alt="" class="slider__col1-row1-img">
+                <p class="slider__col1-title" >Hành Động</p>
+                <div class="slider__col1-fa" id="gallery">
+                    
+                    <div class="slider__col1-row1" >
+                        <img src="./style/img/action/avengers-end game.jpg" alt="Avengers End Game" class="slider__col1-row1-img">                 
                         <a href="./indexchild/avengersendgame.html" class="slider__col1-row1-link">Xem Phim</a>
                         <p class="slider__col1-row1-title">Avengers End Game</p>
                     </div>
                     <div class="slider__col1-row1">
-                        <img src="./style/img/action/aquaman-1.jpg" alt="" class="slider__col1-row1-img">
+                        <img src="./style/img/action/aquaman-1.jpg" alt="Aquaman" class="slider__col1-row1-img">          
                         <a href="./indexchild/aquaman.html" class="slider__col1-row1-link">Xem Phim</a>
-                        <p class="slider__col1-row1-title">Aquaman</p>
+                        <p class="slider__col1-row1-title">Aquaman</p>         
                     </div>
                     <div class="slider__col1-row1">
-                        <img src="./style/img/action/avenger.jpg" alt="" class="slider__col1-row1-img">
-                        <a href="./indexchild/avengers.html" class="slider__col1-row1-link">Xem Phim</a>
-                        <p class="slider__col1-row1-title">Avengers</p>
+                        <img src="./style/img/action/avenger.jpg" alt="Avengers" class="slider__col1-row1-img">
+                       
+                            <a href="./indexchild/avengers.html" class="slider__col1-row1-link">Xem Phim</a>
+                            <p class="slider__col1-row1-title">Avengers</p>
                     </div>
                     <div class="slider__col1-row1">
                         <img src="./style/img/action/captain.jpg" alt="" class="slider__col1-row1-img">
-                        <a href="./indexchild/captain-american.html" class="slider__col1-row1-link">Xem Phim</a>
-                        <p class="slider__col1-row1-title">Captain American</p>
+                   
+                            <a href="./indexchild/captain-american.html" class="slider__col1-row1-link">Xem Phim</a>
+                            <p class="slider__col1-row1-title">Captain American</p>
+                   
                     </div>
                     <div class="slider__col1-row1">
                         <img src="./style/img/action/jorn-wich2.jpg" alt="" class="slider__col1-row1-img">
-                        <a href="./indexchild/jorn-wich.html" class="slider__col1-row1-link">Xem Phim</a>
-                        <p class="slider__col1-row1-title">Jorn Wich 2</p>
+                     
+
+                            <a href="./indexchild/jorn-wich.html" class="slider__col1-row1-link">Xem Phim</a>
+                            <p class="slider__col1-row1-title">Jorn Wich 2</p>
+                       
                     </div>
                    
                 </div>
@@ -254,7 +261,7 @@
                     <div class="slider__col1-row1">
                         <img src="./style/img/anime/onepice.jpg" alt="" class="slider__col1-row1-img">
                         <a href="./indexchild/onepiece.html" class="slider__col1-row1-link">Xem Phim</a>
-                        <p class="slider__col1-row1-title">One Pice</p>
+                        <p class="slider__col1-row1-title">One Piece</p>
                     </div>
                     <div class="slider__col1-row1">
                         <img src="./style/img/anime/dithemavuong.jpg" alt="" class="slider__col1-row1-img">
@@ -490,5 +497,6 @@
     <script src="./javascript/modal.js"></script>
     <script src="./javascript/signin.js"></script>
     <script src="./javascript/main.js"></script>
+    <script src="./javascript/jquery.js"></script>
 </body>
 </html>

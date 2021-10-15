@@ -477,3 +477,9 @@ padding: 8px 12px;
         flex-wrap: wrap;
     }
 }
+.slider__col1-row1 {
+    display: inline-block;
+    padding: 0 5px;
+    width: 32%;
+    float: left;
+}

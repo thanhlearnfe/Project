@@ -7,7 +7,7 @@ $('.banner').slick({
   });
 
 
-  $('.slider__col1-fa').slick({
+  /* $('.slider__col1-fa').slick({
    
     slidesToShow: 3 ,
   slidesToScroll: 1,
@@ -36,4 +36,4 @@ $('.banner').slick({
     // settings: "unslick"
     // instead of a settings object
   ]
-  });
+  }); */
