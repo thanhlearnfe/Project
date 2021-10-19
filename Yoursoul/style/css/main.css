@@ -499,3 +499,8 @@ a.slider__col1-row1-link {
     margin-top: -50px;
     /* z-index: 144; */
 }
+#showtext{
+    font-size: 21px;
+    color: #fff;
+    text-align: center;
+}

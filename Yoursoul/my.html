@@ -18,8 +18,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./style/css/main.css">
+    
 </head>
 <body>
+   <!--  <marquee  scrollamount="10" scrolldeplay="100" loop="1" direction="right" style="background-color: #fff;">Hien tai phan mem dang duoc cap nhap ban hay dang hap</marquee> -->
     <header>
         <div class="header">
             <div class="header__logo">
@@ -37,16 +39,13 @@
                 <!-- <p class="header__logo-text">Your Soul</p>
                 <i class="fas fa-film header__logo-icon"></i> -->
             </div>
-            <div class="header__search">
+            <div class="header__search" id="search">
                 <input class="header__search-input" type="text" placeholder="Nhập tên phim,diễn viên" id="filter-search"/>
                 <i class="fas fa-search header__search-search"></i>
             </div>
             <div class="header__log">
-              
-                <a class="header__log-register " id="account">
-                  phanxuanthanh
-                </a>
-                <a href="./index.html" class="header__log-in ">Đăng Xuất</a>
+                <button class="header__log-register js-showlog-too">Đăng Ký</button>
+                <button class="header__log-in js-showlog">Đăng Nhập</button>
                   <!--Dang nhap-->
                 <div class="modal js-modal">
                     <div class="modal__overlay"></div>
@@ -192,93 +191,12 @@
 
         <div class="banner-slider">
 
-            <div class="banner">
-                <a href="./indexchild/jorn-wich.html" class="banner__img">
-                    <img src="./style/img/banner/baner5.jpg" alt="" class="banner__img-child">
-                </a>
-                <a href="./indexchild/avengers.html" class="banner__img">
-                    <img src="./style/img/banner/baner1.jpg" alt="" class="banner__img-child">
-                </a>
-                <a href="./indexchild/onepiece.html" class="banner__img">
-                    <img src="./style/img/banner/baner2.jpg" alt="" class="banner__img-child">
-                </a>
-                <a href="./indexchild/vungdatcamlang.html" class="banner__img">
-                    <img src="./style/img/banner/baner3.jpg" alt="" class="banner__img-child">
-                </a>
-                <a href="./indexchild/bogia.html" class="banner__img">
-                    <img src="./style/img/banner/baner4.jpg" alt="" class="banner__img-child">
-                </a>
-               
-            </div>  
+            
             <!-- Hành Động --> 
-            <div class="slider__col1" id="action">
-                <p class="slider__col1-title">Hành Động</p>
-                <div class="slider__col1-fa">
-
-                    <div class="slider__col1-row1">
-                        <img src="./style/img/action/avengers-end game.jpg" alt="" class="slider__col1-row1-img">
-                        <a href="./indexchild/avengersendgame.html" class="slider__col1-row1-link">Xem Phim</a>
-                        <p class="slider__col1-row1-title">Avengers End Game</p>
-                    </div>
-                    <div class="slider__col1-row1">
-                        <img src="./style/img/action/aquaman-1.jpg" alt="" class="slider__col1-row1-img">
-                        <a href="./indexchild/aquaman.html" class="slider__col1-row1-link">Xem Phim</a>
-                        <p class="slider__col1-row1-title">Aquaman</p>
-                    </div>
-                    <div class="slider__col1-row1">
-                        <img src="./style/img/action/avenger.jpg" alt="" class="slider__col1-row1-img">
-                        <a href="./indexchild/avengers.html" class="slider__col1-row1-link">Xem Phim</a>
-                        <p class="slider__col1-row1-title">Avengers</p>
-                    </div>
-                    <div class="slider__col1-row1">
-                        <img src="./style/img/action/captain.jpg" alt="" class="slider__col1-row1-img">
-                        <a href="./indexchild/captain-american.html" class="slider__col1-row1-link">Xem Phim</a>
-                        <p class="slider__col1-row1-title">Captain American</p>
-                    </div>
-                    <div class="slider__col1-row1">
-                        <img src="./style/img/action/jorn-wich2.jpg" alt="" class="slider__col1-row1-img">
-                        <a href="./indexchild/jorn-wich.html" class="slider__col1-row1-link">Xem Phim</a>
-                        <p class="slider__col1-row1-title">Jorn Wich 2</p>
-                    </div>
-                   
-                </div>
-            </div>
-            <!-- Anime -->
-            <div class="slider__col1" id="anime">
-                <p class="slider__col1-title">Anime</p>
-                <div class="slider__col1-fa">
-
-                    <div class="slider__col1-row1">
-                        <img src="./style/img/anime/attackontitan.jpg" alt="" class="slider__col1-row1-img">
-                        <a href="./indexchild/attackontitan.html" class="slider__col1-row1-link">Xem Phim</a>
-                        <p class="slider__col1-row1-title">Attack On Titan</p>
-                    </div>
-                    <div class="slider__col1-row1">
-                        <img src="./style/img/anime/onepice.jpg" alt="" class="slider__col1-row1-img">
-                        <a href="./indexchild/onepiece.html" class="slider__col1-row1-link">Xem Phim</a>
-                        <p class="slider__col1-row1-title">One Pice</p>
-                    </div>
-                    <div class="slider__col1-row1">
-                        <img src="./style/img/anime/dithemavuong.jpg" alt="" class="slider__col1-row1-img">
-                        <a href="./indexchild/dithemavuong.html" class="slider__col1-row1-link">Xem Phim</a>
-                        <p class="slider__col1-row1-title">Dị thế ma vương</p>
-                    </div>
-                    <div class="slider__col1-row1">
-                        <img src="./style/img/anime/Grave-of.jpg" alt="" class="slider__col1-row1-img">
-                        <a href="./indexchild/thedig.html" class="slider__col1-row1-link">Xem Phim</a>
-                        <p class="slider__col1-row1-title">The Dig</p>
-                    </div>
-                    <div class="slider__col1-row1">
-                        <img src="./style/img/anime/yourname.jpg" alt="" class="slider__col1-row1-img">
-                        <a href="./indexchild/yourname.html" class="slider__col1-row1-link">Xem Phim</a>
-                        <p class="slider__col1-row1-title">Your Name</p>
-                    </div>
-                   
-                </div>
-            </div>
-            <!-- Khoa học viễn tưởng -->
+            
+            <!-- Tinhf cam -->
             <div class="slider__col1" id="khvt">
-                <p class="slider__col1-title">Khoa Học Viễn Tưởng</p>
+                <p class="slider__col1-title">Phim Mỹ</p>
                 <div class="slider__col1-fa">
 
                     <div class="slider__col1-row1">
@@ -310,72 +228,7 @@
                    
                 </div>
             </div>
-            <!-- Kinh di -->
-            <div class="slider__col1" id="horror">
-                <p class="slider__col1-title">Kinh dị</p>
-                <div class="slider__col1-fa">
-
-                    <div class="slider__col1-row1">
-                        <img src="./style/img/kinh-di/ngaquy.jpg" alt="" class="slider__col1-row1-img">
-                        <a href="./indexchild/ngaquy.html" class="slider__col1-row1-link" target="blank">Xem Phim</a>
-                        <p class="slider__col1-row1-title">Ngạ Quỷ</p>
-                    </div>
-                    <div class="slider__col1-row1">
-                        <img src="./style/img/kinh-di/drakspell.jpg" alt="" class="slider__col1-row1-img">
-                        <a href="./indexchild/drakspell.html" class="slider__col1-row1-link" target="blank">Xem Phim</a>
-                        <p class="slider__col1-row1-title">Dark Spell</p>
-                    </div>
-                    <div class="slider__col1-row1">
-                        <img src="./style/img/kinh-di/lanube.jpg" alt="" class="slider__col1-row1-img">
-                        <a href="./indexchild/lanube.html" class="slider__col1-row1-link" target="blank">Xem Phim</a>
-                        <p class="slider__col1-row1-title">Lanube</p>
-                    </div>
-                    <div class="slider__col1-row1">
-                        <img src="./style/img/kinh-di/theconjuring.jpg" alt="" class="slider__col1-row1-img">
-                        <a href="./indexchild/theconjuring.html" class="slider__col1-row1-link" target="blank">Xem Phim</a>
-                        <p class="slider__col1-row1-title">The Conjuring</p>
-                    </div>
-                    <div class="slider__col1-row1">
-                        <img src="./style/img/kinh-di/vungdatcamlang.jpg" alt="" class="slider__col1-row1-img">
-                        <a href="./indexchild/vungdatcamlang.html" class="slider__col1-row1-link" target="blank">Xem Phim</a>
-                        <p class="slider__col1-row1-title">Vùng Đất Câm Lặng</p>
-                    </div>
-                   
-                </div>
-            </div>
-            <!-- Tinhf cam -->
-            <div class="slider__col1" id="love">
-                <p class="slider__col1-title">Tình cảm</p>
-                <div class="slider__col1-fa">
-
-                    <div class="slider__col1-row1">
-                        <img src="./style/img/tinhcam/bogia.jpg" alt="" class="slider__col1-row1-img">
-                        <a href="./indexchild/bogia.html" class="slider__col1-row1-link">Xem Phim</a>
-                        <p class="slider__col1-row1-title">Bố Già</p>
-                    </div>
-                    <div class="slider__col1-row1">
-                        <img src="./style/img/tinhcam/itawon.jpg" alt="" class="slider__col1-row1-img">
-                        <a href="./indexchild/itawan.html" class="slider__col1-row1-link">Xem Phim</a>
-                        <p class="slider__col1-row1-title">Itawon Class</p>
-                    </div>
-                    <div class="slider__col1-row1">
-                        <img src="./style/img/tinhcam/matbiec.jpg" alt="" class="slider__col1-row1-img">
-                        <a href="./indexchild/matbiecc.html" class="slider__col1-row1-link">Xem Phim</a>
-                        <p class="slider__col1-row1-title">Mắt Biếc</p>
-                    </div>
-                    <div class="slider__col1-row1">
-                        <img src="./style/img/tinhcam/thdig.jpg" alt="" class="slider__col1-row1-img">
-                        <a href="./indexchild/thedigg.html" class="slider__col1-row1-link">Xem Phim</a>
-                        <p class="slider__col1-row1-title">The Dig</p>
-                    </div>
-                    <div class="slider__col1-row1">
-                        <img src="./style/img/tinhcam/thepursuit.jpg" alt="" class="slider__col1-row1-img">
-                        <a href="./indexchild/pursuit.html" class="slider__col1-row1-link">Xem Phim</a>
-                        <p class="slider__col1-row1-title">The Pursuit</p>
-                    </div>
-                   
-                </div>
-            </div>
+            <h1 id="showtext"></h1>
         </div>
 
         <div class="topmonth">
@@ -479,11 +332,11 @@
            
     
         </footer>
-        
         <div id="backtotop">
             <i class="ti-angle-up back-to-top-icon"></i>
         </div>
-    
+
+        <h1 id="showtext"></h1>
     </script>
    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -492,5 +345,6 @@
     <script src="./javascript/modal.js"></script>
     <script src="./javascript/signin.js"></script>
     <script src="./javascript/main.js"></script>
+    <script src="./javascript/jquery.js"></script>
 </body>
 </html>

@@ -79,10 +79,10 @@ function searchItem(){
       $(".slider__col1").css({margin:"0"});
     }
   })
-  checkEmpty(element_films);
+  checkEmpty(cakes);
 
 }
-/* function checkEmpty(element){
+function checkEmpty(element){
   let count=0;
   for (let i=0;i<element.length;i++){
     if(element[i].style.display === 'block'){
@@ -96,5 +96,5 @@ function searchItem(){
     document.getElementById('showtext').textContent="";
 
   }
-} */
+}
   
