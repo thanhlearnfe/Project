@@ -25,89 +25,89 @@ const app ={
             id:1,
             name:"Chúng ta của hiện tại",
             singer:"Sơn Tùng MTP",
-            img:"../img/img1.jpg",
-            path:"../path/chungtacuahientai.mp3"
+            img:"../style/img/img1.jpg",
+            path:"../style/path/chungtacuahientai.mp3"
         },
         {
             id:2,
             name:"Bước qua nhau",
             singer:"Vũ",
-            img:"../img/img2.jpg",
-            path:"../path/buocquanhau.mp3"
+            img:"../style/img/img2.jpg",
+            path:"../style/path/buocquanhau.mp3"
         },
         {
             id:3,
             name:"Vợ tuyệt với nhất",
             singer:"Vũ Duy Khánh",
-            img:"../img/img3.jpeg",
-            path:"../path/votuyetvoinhat.mp3"
+            img:"../style/img/img3.jpeg",
+            path:"../style/path/votuyetvoinhat.mp3"
         },
         {
             id:4,
             name:"Những gì anh nói",
             singer:"Boizz",
-            img:"../img/img4.jpg",
-            path:"../path/nhunggianhnoi.mp3"
+            img:"../style/img/img4.jpg",
+            path:"../style/path/nhunggianhnoi.mp3"
         },
         {
             id:5,
             name:"Đông kiếm em",
             singer:"Vũ",
-            img:"../img/img5.jpg",
-            path:"../path/dongkiemem.mp3"
+            img:"../style/img/img5.jpg",
+            path:"../style/path/dongkiemem.mp3"
         },
         {
             id:6,
             name:"1 Phút",
             singer:"Adiez",
-            img:"../img/img6.png",
-            path:"../path/1phut.mp3"
+            img:"../style/img/img6.png",
+            path:"../style/path/1phut.mp3"
             
         },
         {
             id:7,
             name:"Hẹn Một Mai",
             singer:"Bùi Anh Tuấn",
-            img:"../img/img7.jpg",
-            path:"../path/henmotmai.mp3"
+            img:"../style/img/img7.jpg",
+            path:"../style/path/henmotmai.mp3"
         },
         {
             id:8,
             name:"Ánh Nắng Của Anh",
             singer:"Đức Phúc",
-            img:"../img/img8.png",
+            img:"../style/img/img8.png",
 
-            path:"../path/anhnangcuaanh.mp3"
+            path:"../style/path/anhnangcuaanh.mp3"
         },
         {
             id:9,
             name:"Có hẹn với thanh xuân",
             singer:"Monstar",
-            img:"../img/img9.jpg",
+            img:"../style/img/img9.jpg",
             path:"../path/cohenvoithanhxuan.mp3"
         },
         {
             id:10,
             name:"In Another Life",
             singer:"Killa Qualn",
-            img:"../img/img10.jpg",
-            path:"../path/inanotherlife.mp3"
+            img:"../style/img/img10.jpg",
+            path:"../style/path/inanotherlife.mp3"
             
         },
         {
             id:11,
             name:"Hẹn Một Mai",
             singer:"Bùi Anh Tuấn",
-            img:"../img/img7.jpg",
-            path:"../path/henmotmai.mp3"
+            img:"../style/img/img7.jpg",
+            path:"../style/path/henmotmai.mp3"
         },
         {
             id:12,
             name:"Ánh Nắng Của Anh",
             singer:"Đức Phúc",
-            img:"../img/img8.png",
+            img:"../style/img/img8.png",
 
-            path:"../path/anhnangcuaanh.mp3"
+            path:"../style/path/anhnangcuaanh.mp3"
         }
     ],
     render:function(){
