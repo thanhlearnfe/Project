@@ -1,0 +1,223 @@
+@media(max-width:1200px){
+    .footer__sub-container-sale-title {
+        font-size: 60px;
+    }
+    footer {
+        flex-wrap: wrap;
+    }
+    .footer__info {
+        width: 33.33%;
+    }
+    .footer__info-col5 {
+        margin-left: 0;
+    }
+    .footer__info-header {
+        max-width: 240px;
+    }
+}
+@media(max-width:1112px){
+    .background-center {
+        top: 130px;
+    }
+    .background-center-text {
+        font-size: 37.5px;
+    }
+}
+@media(max-width:1025px){
+    .background-center {
+        top: 91px;
+    }
+    .background-center-text {
+        font-size: 35.5px;
+    }
+    .nav{
+        display: none;
+    }
+    .icon-lan{
+        display: none;
+    }
+    .menu-label {
+        display: none;
+    }
+    .logo{
+        flex-grow: 1;
+    }
+    .icon{
+        padding-top: 0;
+        margin-top: 5px;
+    }
+    .first-body-text {
+        margin-bottom: 5%;
+    }
+    .first-body-text-body{
+        font-size: 27px;
+    }
+}
+@media(max-width:1000px){
+    .footer__sub-container{
+        display: inherit;
+    }
+    .footer__sub-container-email{
+        display: contents;
+    }
+    .footer__sub-container-form-ip{
+        width: 90%;
+        margin-left: 10px  ;
+        margin-right: 0;
+    }
+    svg.footer__sub-container-email-animation{
+        display: none;
+    }
+    .footer__contact-mess{
+        flex: 0 1 45%;
+    }
+    .footer__contact-mess-icon {
+        font-size: 36px;
+        color: #eae5ef8c;
+        flex: 0 0 50px;
+    }
+}
+@media(max-width:769px){
+    
+    .background-center-text {
+        font-size: 30.5px;
+    }
+    .first-body-text {
+        margin-bottom: 4%;
+    }
+    .first-body-text-header {
+        font-size: 10px;
+    }
+    .first-body-text-body {
+        font-size: 20px;
+    }
+    .first-body-text-footer{
+        font-size: 12px;
+    }
+    .footer__sub-container-sale-title {
+        font-size: 45px;
+    }
+    .footer__sub-container-form {
+        display: block;
+    }
+    .btn-footer-form{
+        padding: 15px 30px;
+        width: 100%;
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    .footer-sub {
+        padding: 20px 0;
+        color: #fff;
+    }
+    .footer__contact {
+        padding-top: 35px;
+    }
+    .footer__info {
+        width: 49.33%;
+    }
+}
+@media(max-width:576px){
+    .background{
+        padding-top: 80.5%;
+    }
+    .background-center{
+        left:24%;
+        top:157px;
+    }
+    .background-center-text{
+        margin-bottom: 20px;
+    }
+    .background-center-span{
+        padding:16px;
+    }
+    .icon-item {
+        padding: 0 5px;
+    }
+    .frist-body{
+        column-count: 1;
+    }
+    .first-body-text {
+        margin-bottom: 10%;
+    }
+    .first-body-text-header {
+        font-size: 15px;
+    }
+    .first-body-text-body {
+        font-size: 35px;
+    }
+    .first-body-text-footer {
+        font-size: 17px;
+    }
+    .footer__contact-mess{
+        flex: 1 1 65%;
+    }
+}
+
+
+
+@media(max-width:476px){
+    #nav-bar{
+        top:15px;
+    }
+    img.logo__img{
+        width: 120px;
+    }
+    .background-center {
+        left: 5%;
+        right: 5%;
+        top: 83px;
+    }
+    .background-center-text {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .background-center-span {
+        font-weight: 600;
+        margin-left: 25%;
+    }
+    .first-body-text-header {
+        font-size: 10px;
+    }
+    .first-body-text-body {
+        font-size: 25px;
+    }
+    .first-body-text-footer {
+        font-size: 13px;
+    }
+    .contact-slider {
+        margin-top: 42px !important;
+        margin-bottom: 40px !important;
+    }
+    .contact-header-text {       
+        font-size: 22px !important;     
+    }
+    .slick-initialized .slick-slide {       
+        margin: 0 5px !important;
+    }
+    button.slick-prev.slick-arrow {
+        top: -6% !important;
+        left: 44% !important;
+    }
+    .slick-next.slick-arrow {
+        top: -6% !important;
+        left: 53% !important;
+    }
+    .slider-col3{
+        display: inherit !important;
+    }
+    .slider-col3-row1 {
+        width: 100% !important;
+    }
+    .slider-col3-1 {
+        width: 100% !important;
+    }
+    button.slick-next.slick-next-col3.slick-arrow {
+        left: 94% !important;
+        top: -30px !important;
+    }
+    button.slick-prev.slick-prev-col3.slick-arrow {
+        top: -30px !important;
+        left: 86% !important;
+    }
+}

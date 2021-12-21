@@ -1,0 +1,731 @@
+html{
+    font-family: 'Montserrat';;
+}
+body{
+    height: 2000px;
+    background-color: #000
+}
+header{
+    background-color:transparent;
+    width: 100%;
+    position: absolute;
+}
+#navbar{
+    background-color: black;
+    top: -100%;
+    position: fixed;
+    z-index: 100;
+}
+#backtotop {
+    position: fixed;
+    background-color: rgb(245, 36, 36);
+    border-radius: 50%;
+    height: 72px;
+    width: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 13px;
+    z-index: 10000;
+    bottom: 15%;
+    display: none;
+    cursor: pointer;
+}
+#backtotop:hover{
+    background-color: black;
+    border: 1px solid rgb(245, 36, 36);
+}
+.back-to-top-icon{
+    color: #fff;
+    font-size: 22px;
+}
+
+.header__body {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    padding: 5px 15px;
+}
+img.logo__img {
+    width: 172px;
+}
+.nav {
+    display: flex;
+    flex-grow: 8;
+    justify-content: center;
+}
+.nav__items {
+    color: #fff;
+    display: flex;
+    padding: 12px 15px;
+    cursor: pointer;
+    line-height: 45px;
+    letter-spacing: 1.1px;
+}
+.nav__item-text {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+}
+i.fas.fa-chevron-down.nav__item-icon-down {
+    font-size: 8px;
+    margin-left: 2px;
+    margin-top: 20px;
+}
+.nav__item-text.nav__item-text-last {
+    color: #f52424;
+    font-weight: 500;
+    /* font-family: auto; */
+    font-family: 'Montserrat', sans-serif;
+}
+.menu-label {
+    position: absolute;
+    background: red;
+    font-size: 10px;
+    margin-left: 24px;
+    padding: 3px 5px 0px 4px;
+    margin-top: 22px;
+    border-radius: 2px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    line-height: 1;
+    top: 0px;
+    right: 47%;
+    color: white;
+}
+.icon {
+    color: #fff;
+    margin: 10px;
+    text-align: center;
+    padding-top: 10px;
+    margin-right: 0;
+}
+.icon-item{
+    font-size: 28px;
+    padding:0 14px;
+}
+.icon-icon {
+    margin-top: 12px;
+}
+.icon-span {
+    margin-left: 15px;
+    font-size: 13px;
+    
+}
+.icon-span:hover{
+    cursor: pointer;
+}
+.icon-span:hover .nav__item-icon-down{
+    color: #f52424;
+}
+.icon-span-items{
+    position: absolute;
+    color: #fff;
+    right: 132px;
+    top: 56%;
+    background: #1e171b;
+    animation-name: bottomtotoplan;
+    animation-duration: 0.3s;
+}
+.icon-span-item{
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+.icon-span-item:hover{
+    color: #f52424;
+}
+.icon-span-items-us{
+    position: absolute;
+    background: #1e171b;
+    color: #fff;
+    right: 0;
+    top: 56%;
+    animation-name: bottomtotoplan;
+    animation-duration: 0.3s;
+}
+.nav__items:hover .nav__item-icon-down{
+    font-size: 9px;
+    margin-left: 2px;
+    margin-top: -3px;
+    margin-bottom: 18px;
+    transform: rotateX(-149deg);
+
+}
+.nav__item-header-hover:hover{
+    color: red;
+    cursor: pointer;
+}
+.nav__item-menu-home-contact-li {
+    flex-grow: 8;
+    list-style: none;
+    font-size: 13px;
+    line-height: 30px;
+}
+i.ti-angle-right.nav__item-menu-home-contact-right {
+    font-size: 12px;
+    line-height: 30px;
+    margin-right: 4px;
+    /* height: 20px; */
+}
+.nav__item-menu-home-contact-body{
+    display: flex;
+    height: 30px;
+}
+.nav__items-menu-home {
+    position: fixed;
+    background: #262121;
+    margin-top: 88px;
+    z-index: 1;
+    display: none;
+}
+.nav__item-menu-home-contact {
+    padding-left: 20px;
+    margin-top: 3px;
+}
+
+.nav__item-menu-home-contact-body:hover .nav__item-menu-home-contact-li{
+    animation-name: home;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    
+}
+.nav__items-menu-home-two{
+    margin-left: 30%;
+}
+.nav__item-menu-home {
+    width: 300px;
+}
+.nav__item-menu-home-two{
+    margin-left: 30px;
+}
+.nav__item-menu-home-contact-li-span-new-yellow{
+    background-color: rgb(221, 198, 69);
+    margin-left: 7%;
+    padding: 4px ;
+    font-size: 10px;
+    font-weight: 600;
+    border-radius: 3px;
+}
+.nav__item-menu-home-contact-li-span-new {
+    background: red;
+    margin-left: 7%;
+    padding: 3px 5px;
+    padding-bottom: 2px;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: 600;
+}
+.nav__items-menu-home::after{
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 45px;
+    top:-45px;
+    left: 0%;
+   
+}
+.nav__item-text-home:hover .nav__items-menu-home{
+    display: flex;
+}
+.nav__item-header-hover-page:hover  .nav__item-menu-page{
+    display: block;
+}
+.nav__item-menu-page{
+    background: #262121;
+    position: absolute;
+    margin-top: 88px;
+    z-index: 1;
+    display: none;
+}
+.nav__item-menu-page::after{
+    content: "";
+    position: absolute;
+    width: 78px;
+    height: 51px;
+    top: -50px;
+    left: 0%;
+}
+i.ti-angle-right.nav__item-menu-home-contact-right.nav__item-menu-page-right {
+    display: none;
+}
+ul.nav__item-menu-home-contact-li-page-ul {
+    position: absolute;
+    margin-left: 93%;
+    width: 300px;
+    top: 0;
+    background: #262121;
+    padding-left: 15px;
+    display: none;
+}
+.nav__item-menu-home-contact-body:hover{
+    background: #000;
+}
+li.nav__item-menu-home-contact-li:hover{
+    background: #000;
+    color: #fff;
+}
+.nav__item-menu-home-contact-body-product-page:hover .nav__item-menu-home-contact-li-page-ul{
+    display: block;
+    color: white;
+    animation-name: hidden;
+    animation-duration: 0.5s;
+}
+.nav__item-menu-home-contact-body:hover i.ti-angle-right.nav__item-menu-home-contact-right.nav__item-menu-page-right {
+    display: block;
+}
+.nav__item-header-hover-page:hover .nav__item-menu-page{
+    color: white;
+   
+}
+.background{
+    padding-top: 37.5%;
+    background:rgba(0,0,0,0.25) url('../css/video-screen.webp') top center/ cover no-repeat;
+    background-blend-mode: darken;
+}
+.background-center{
+    position: absolute;
+    top:156px;
+    left: 32%;
+    display: flex;
+    flex-direction: column;
+}
+.background-center-text{
+    font-size: 45px;
+    letter-spacing: 4px;
+    font-weight: 900;
+    font-family:'Montserrat';
+    color: #fff;
+    margin-bottom: 30px;
+}
+.background-center-span {
+    text-align: center;
+    padding: 23px;
+    width: 30%;
+    background: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-left: 31%;
+    font-family:'Montserrat';
+    font-weight: 500;
+}
+
+.nav__item-show-game::after{
+    content: "";
+    position: absolute;
+    width: 10%;
+    top: -40px;
+    height: 40px;
+    left: 0;
+    margin-left: 45%;
+    margin-right: 30%;
+
+}
+.nav__item-show-game {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    margin-top: 77px;
+    background: #1b1b1b;
+    z-index: 1;
+    display: none;
+}
+.nav__item-header-hover-game:hover .nav__item-show-game{
+    display: block;
+}
+.nav__item-header-hover-game:hover .nav__item-show-game-item-one{
+    animation-name: bottomtotop;
+    animation-duration: 0.5s;
+}
+.nav__item-header-hover-game:hover .nav__item-show-game-item-two{
+    animation-name: bottomtotop;
+    animation-duration: 0.6s;
+}
+.nav__item-header-hover-game:hover .nav__item-show-game-item-three{
+    animation-name: bottomtotop;
+    animation-duration: 0.75s;
+}
+.nav__item-header-hover-game:hover .nav__item-show-game-item-four{
+    animation-name: bottomtotop;
+    animation-duration: 1s;
+}
+.nav__item-show-game-body {
+    margin: 30px 10px;
+    padding-top: 10px;
+}
+.nav__item-show-game-body-img {
+    display: flex;
+}
+.nav__item-show-game-item {
+    padding-left: 4%;
+    padding-right: 0%;
+    width: 16%;
+    flex-grow: 2.5;
+}
+.nav__item-show-game-content {
+    display: flex;
+    margin-top: 9px;
+}
+.nav__item-show-game-content:hover .content-text-right-game{
+    display: block;
+}
+.content-text-right-game{
+    font-size: 8px;
+    margin-right: 4px;
+    color: white;
+    line-height: 22px;
+    display: none;
+}
+.nav__item-show-game-header {
+    font-size: 19px;
+    color: white;
+    font-family:'Montserrat';
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.nav__item-show-game-header:hover{
+    color: red;
+    cursor: pointer;
+}
+.nav__item-show-game-content:hover {
+    background: black;
+    cursor: pointer;
+}
+.nav__item-text-game {
+    color: white;
+    font-size: 12px;
+    line-height: 17px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+.nav__item-show-game-body-contact {
+    margin-left: 53%;
+    margin-top: 25px;
+}
+.nav__item-show-game-body-contact-a:hover{
+    color: red;
+}
+.nav__item-show-game-body-contact-a:hover .ti-arrow-right{
+    animation-name: home;
+    animation-duration: 0,4s;
+    animation-fill-mode: forwards;
+}
+.nav__item-show-game-body-contact-a{
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+.nav__item-menu-home-contact-body-category-page:hover .nav__item-menu-home-contact-li-page-ul{
+    display: block;
+    color: white;
+    margin-top: 33px;
+    animation-name: hidden;
+    animation-duration: 0.5s;
+}
+.nav__item-menu-home-contact-body-Cart-Checkout:hover .nav__item-menu-home-contact-li-page-ul{
+    display: block;
+    color: white;
+    margin-top: 63px;
+    animation-name: hidden;
+    animation-duration: 0.5s;
+}
+.nav__item-menu-home-contact-body-account:hover .nav__item-menu-home-contact-li-page-ul{
+    display: block;
+    color: white;
+    margin-top: 93px;
+    animation-name: hidden;
+    animation-duration: 0.5s;
+}
+.nav__item-menu-home-contact-body-blog:hover .nav__item-menu-home-contact-li-page-ul{
+    display: block;
+    color: white;
+    margin-top: 123px;
+    animation-name: hidden;
+    animation-duration: 0.5s;
+}
+.frist-body{
+    column-count: 3;
+    column-gap: 0;
+    overflow: hidden;
+}
+.first-body-img{
+    padding-top: 39%;
+    background: url('../img/banner-games-01.webp') top center/ cover no-repeat;
+    display: flex;
+    height: 0;
+    flex-direction: column-reverse;
+    transition: all 1s 0.1s ease-in-out;
+
+   
+}
+.first-body-img:hover{
+    transform: scale(1.1);
+   
+}
+.first-body-img-se{
+    padding-top: 39%;
+    background: url('../img/banner-games-02.webp') top center/ cover no-repeat;
+    display: flex;
+    height: 0;
+    flex-direction: column-reverse;
+    transition: all 1s 0.1s ease-in-out;
+}
+.first-body-img-se:hover{
+    transform: scale(1.1);
+   
+}
+.first-body-img-th{
+    padding-top: 39%;
+    background: url('../img/banner-games-03.webp') top center/ cover no-repeat;
+    display: flex;
+    height: 0;
+    flex-direction: column-reverse;
+    transition: all 1s 0.1s ease-in-out;
+}
+.first-body-img-th:hover{
+    transform: scale(1.1);
+   
+}
+.first-body-text {
+    text-align: center;
+    color: white;
+    margin-bottom: 8%;
+}   
+.first-body-text-header {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 0px;
+}
+.first-body-text-body {
+    font-size: 29px;
+    font-weight: 800;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-family:'Montserrat';
+}
+.first-body-text-footer {
+    margin-top: 4px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Montserrat';
+}
+.slide-img{
+    width: 100%;
+}
+.slick-prev:before, .slick-next:before{
+    font-family: fontawesome;
+    font-size: 30px;
+    color: #fff;
+}
+.slick-prev:before{
+    content:'\f100';
+}
+.slick-next:before{
+    content:'\f101';
+}
+.footer-sub{
+    padding: 89px 0;
+    color: #fff;
+}
+.footer__sub-container-sale-title {
+    font-size: 90px;
+    display: flex;
+    font-weight: 600;
+    padding: 0 15px;
+}
+.footer__sub-container-sale{
+    display: flex;
+    flex-direction: column  ;
+}
+.footer__sub-container {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__sub-container-form{
+    display: flex;
+    margin-right: 15px;
+}
+.btn-footer-form {
+    padding: 20px 50px;
+    color: #fff;
+    font-weight: 700;
+    background-color: #f52424;
+    border: none;
+    font-size: 21px;
+    border-radius: 5px;
+    height: 67px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+button.btn-footer-form:hover{
+    color: #000;
+    background-color: #fff;
+}
+.footer__sub-container-form-ip{
+    font-size: 24px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    opacity: 1 !important;
+    margin-top: 30px;
+    margin-right: 20px;
+    padding: 15px;
+    outline: none;
+    border-bottom: 1.5px solid;
+}
+.footer__sub-container-email{
+    position: absolute;
+    right: 20%;
+    
+}
+svg.footer__sub-container-email-animation {
+    border-radius: 5px;
+    width: 100%;
+    position: absolute;
+    right: 4%;
+    background-color: transparent;
+    fill: none;
+    height: 65%;
+    top: 35%;
+}
+rect {
+    position: absolute;
+    stroke: #fcffff;
+    stroke-width: 4px;
+    stroke-dasharray:  400%;
+    stroke-dashoffset: 400%;
+    transition:  1s;
+}
+.footer__sub-container-email:hover svg rect{
+    stroke-dashoffset: 800%;
+}
+.footer__contact {
+    /* column-count: 3; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    padding-top: 89px;
+}
+.footer__contact-mess {
+    display: flex;
+    /* flex-grow: 3; */
+    flex: 0 1 33.333%;
+    margin-top: 10px;
+}
+.footer__contact-mess-icon{
+    font-size: 44px;
+    color: #eae5ef8c;
+}
+.footer__contact-phone {
+    padding-left: 20px;
+}
+.footer__contact-phone-header {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 0;
+}
+.footer__contact-phone-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+footer{
+    background-color: #1e171b;
+    display: flex;
+}
+.footer__info{
+    margin-top: 40px;
+}
+.footer__info-header-img{
+    width: 175px;
+    margin-bottom: 25px;
+}
+.footer__info-text {
+    font-size: 15px;
+    color: #bbb3b8;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 35px;
+}
+.footer__info-header {
+    padding: 0 15px;
+}
+.footer__info-header-text {
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 25px;
+}
+.footer__info-border-icon {
+    width: 44px;
+    height: 44px;
+    background: #bbb3b8;
+    background-color: #251e22 ;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    margin-bottom: 10px;
+}
+.footer__info-border-icon:hover{
+    background-color: #f52424;
+}
+.footer__info-border-icon-child{
+    color: #bbb3b8;
+    font-size: 18px;
+    
+}
+.footer__info-border-icon:hover .footer__info-border-icon-child{
+    color: #fff;
+}
+.footer__info-border-icon-farther{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer__info-icon-ama {
+    color: #bbb3b8;
+    margin-right: 20px;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.footer__info-header-them {
+    font-size: 25px;
+    font-weight: 800;
+    color: #bbb3b8;
+}
+.footer__info-header-foxic {
+    color: #f52424;
+    margin-right: 5px;
+}
+.footer__info-header-them {
+    border: 3px dashed #bbb3b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__info-col1{
+    width: 22.222222%;
+}
+.footer__info-col2{
+    width: 16.6666666%;
+}
+.footer__info-col3{
+    width: 16.6666666%;
+}
+.footer__info-col4{
+    width: 16.6666666%;
+}
+.footer__info-col5{
+    margin-left: 70px;
+    width: 22.222222%;
+}
