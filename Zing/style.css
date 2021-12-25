@@ -11,7 +11,6 @@
 
 body {
   background-color: #f5f5f5;
-  background-image: url('./img/lisa.jpg');
   background-size: 2000px auto;
 
 }
@@ -44,7 +43,24 @@ span {
 .player.playing .icon-play {
   display: none;
 }
+.control .fa-volume-mute{
+  display: none;
+  color: var(--primary-color);
 
+}
+.control.mute .fa-volume-mute {
+  display: inline-block;
+  color: var(--primary-color);
+
+}
+.fa-volume-up{
+  color: var(--primary-color);
+
+}
+.control.mute .fa-volume-up {
+  display: none;
+
+}
 .dashboard {
   padding: 16px 16px 14px;
   background-color: #fff;
@@ -218,4 +234,48 @@ marquee {
   padding: 16px 8px;
   color: #999;
   font-size: 18px;
+}
+button.button {
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  border-color: burlywood;
+  font-family: none;
+  position: absolute;
+  left: 5%;
+  top: 4%;
+  cursor: pointer;
+}
+button.button:hover{
+  opacity: 0.7;
+}
+.body-background {
+  flex-wrap: wrap;
+  width: 80%;
+  margin-left: 10%;
+  border-radius: 10px;
+  display:none;
+}
+.body-background.active {
+  display: flex;
+  background: aliceblue;
+  position: absolute;
+    z-index: 999;
+    top: 10%;
+}
+.backgrounds-idol {
+  width: 400px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.backgrounds-idol:hover{
+  opacity: 0.8;
+}
+img.img-idol {
+  width: 100%;
+}
+.name-idol {
+  text-align: center;
+    font-family: ui-monospace;
+    font-size: 20px;
 }

@@ -15,18 +15,25 @@ const bgrsong = $('.song');
 const random = $('.btn-random');
 const btnrepeat = $('.btn-repeat');
 const playlist = $('.playlist');
+const volume = $('.volume');
+const button =$('.button');
+const openclose = $('.body-background');
+const bodybgr = $('body')
 const app ={
     curentindex:0,
+    bgrindex:0,
     isPlaying:false,
     isRandom:false,
     isRepeat:false,
+    isMute:false,
+    isOpen:false,
     songs:[
         {
             id:1,
-            name:"Chúng ta của hiện tại",
-            singer:"Sơn Tùng MTP",
-            img:"./img/img1.jpg",
-            path:"./path/chungtacuahientai.mp3"
+            name:"Có hẹn với thanh xuân",
+            singer:"Monstar",
+            img:"./img/img9.jpg",
+            path:"./path/cohenvoithanhxuan.mp3"
         },
         {
             id:2,
@@ -81,10 +88,11 @@ const app ={
         },
         {
             id:9,
-            name:"Có hẹn với thanh xuân",
-            singer:"Monstar",
-            img:"./img/img9.jpg",
-            path:"./path/cohenvoithanhxuan.mp3"
+            name:"Chúng ta của hiện tại",
+            singer:"Sơn Tùng MTP",
+            img:"./img/img1.jpg",
+            path:"./path/chungtacuahientai.mp3"
+            
         },
         {
             id:10,
@@ -110,6 +118,38 @@ const app ={
             path:"./path/anhnangcuaanh.mp3"
         }
     ],
+    backdround : [
+        {
+            id:1,
+            name: 'IU',
+            path:'./img2/iu.jpg'
+        },
+        {
+            id:2,
+            name: 'Jennie',
+            path:'./img2/jennie.jpg'
+        },
+        {
+            id:3,
+            name: 'JiChangWook',
+            path:'./img2/jichangwook.jpg'
+        },
+        {
+            id:4,
+            name: 'Jisoo',
+            path:'./img2/jisoo.jpg'
+        },
+        {
+            id:5,
+            name:'Lisa',
+            path:'./img2/lisa.jpg'
+        },
+        {
+            id:6,
+            name: 'Rose',
+            path:'./img2/rose.jpg'
+        }
+    ],
     render:function(){
         var _this = this;
         var htmls = app.songs.map(function(song,index){
@@ -128,6 +168,18 @@ const app ={
             `
         })
         document.querySelector('.playlist').innerHTML =htmls.join('');
+    },
+    renderBR : function(){
+        var htmls = this.backdround.map(function(backdround){
+            return `
+            <div class="backgrounds-idol" data-index="${backdround.id}">
+            <p class="name-idol">${backdround.name}</p>
+            <img src="${backdround.path}" alt="" class="img-idol">
+            </div>
+            `
+        })
+        const test = document.querySelector('.body-background');
+        document.querySelector('.body-background').innerHTML = htmls.join('');
     },
     HandleEvent: function(){
         const _this = this;
@@ -264,7 +316,47 @@ const app ={
                }
             }
         }
-        
+        // Tắt bật âm
+        volume.onclick = function(){
+            $('.control').classList.toggle('mute');
+            if(_this.isMute == false){
+                audio.muted = true;
+                _this.isMute = true;
+            }
+            else{
+                audio.muted = false;
+                _this.isMute = false;
+            }
+        }
+       
+    },
+    HandleBgr: function(){
+        const _this = this;
+        button.onclick = function(){
+            if(_this.isOpen == false){
+                _this.isOpen = true;
+                openclose.classList.add('active');
+            }
+            else{
+                _this.isOpen = false;
+                openclose.classList.remove('active');
+            }
+
+        }
+        const backgroundIdol = $('.backgrounds-idol')
+        //
+        openclose.onclick = function(e){
+            const findindex = e.target.closest('.backgrounds-idol')
+            if(findindex){
+                console.log(findindex.getAttribute('data-index'));
+                _this.bgrindex =Number (findindex.getAttribute('data-index')-1)
+                _this.loadBackground();
+                openclose.classList.remove('active');
+                _this.isOpen = false;
+            }
+            console.log(_this.bgrindex)
+
+        }
     },
     // Định nghĩa thuộc tính 
     defineProperties: function(){
@@ -272,6 +364,11 @@ const app ={
            get: function(){
                return this.songs[this.curentindex]
            }
+        })
+        Object.defineProperty(this, 'curentBackground',{
+            get: function(){
+                return this.backdround[this.bgrindex]
+            }
         })
     },
     nextSong: function(){
@@ -316,6 +413,11 @@ const app ={
         timesecond =(Math.floor( audio.currentTime)%60);
         timepresent.textContent = Math.floor(( audio.currentTime)/60)+':'+ (timesecond>9 ? timesecond :'0' + timesecond);
     },
+    loadBackground: function(){
+
+        $('body').style.backgroundImage =`url('${this.curentBackground.path}')`;
+        console.log(this.curentBackground.path)
+        },
     start:function(){
         //Render danh sách bài hát
         this.render();
@@ -325,6 +427,10 @@ const app ={
         this.HandleEvent()
         //Tải lên bài hát
         this.loadCurrentSong()
+        //
+        this.loadBackground()
+        this.renderBR();
+        this.HandleBgr()
        
     }
 }
