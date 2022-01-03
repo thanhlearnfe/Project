@@ -195,7 +195,6 @@ input{
     display: flex;
     padding: 10px;
     height: fit-content;
-    width: 100%;
     border-radius: 7px;
     align-items: center;
     border-bottom: 1px solid #ffffff29;
@@ -220,6 +219,13 @@ input{
 }
 .list-song-album {
     flex: 2;
+    display: flex;
+    justify-content: space-between;
+}
+.list-song-album i{
+   font-size: 13px;
+   color: #428891;
+   display: none;
 }
 .list-song-album p{
     font-size: 12px;
@@ -290,7 +296,7 @@ i.bi.bi-heart-fill {
     padding:0.5rem;
     margin:0 0.7rem;
 }
-.btn-lyric .bi{
+.btn-lyric i{
     font-size:2rem;
     margin: 0 0.7rem;
 }
@@ -546,8 +552,8 @@ i.bi.bi-arrow-right {
     position: absolute;
     width: 77%;
     background: #192f60;
-    top: 40px;
-    z-index: 2;
+    top: 41px;
+    z-index: 4;
     border-radius: 0px 0px 18px 18px;
     padding: 20px 0px 15px 0px;
 }
