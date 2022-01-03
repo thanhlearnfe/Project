@@ -1,0 +1,75 @@
+
+.btn .bi-pause-circle{
+    display:none;
+}
+.btn-toggle-play.active .bi-pause-circle{
+    display:block;
+    padding: 0;
+}
+.btn-toggle-play.active .bi-play-circle{
+    display:none;
+}
+.btn-lyric .bi-volume-mute{
+    display:none;
+}
+.btn-random.active{
+    color: #1f3cb9;
+}
+.btn-repeat.active{
+    color: #1f3cb9;
+}
+.list-song.active{
+    background: #132958;
+}
+.list-song:hover{
+    background: #132958;
+    cursor: pointer;
+}
+.overview-list.active {
+    background: #637191;
+    border-radius: 25px;
+}
+.list-song-album-time .bi-heart-fill.active{
+    color: #fff;
+}
+img.img-animation-three {
+    position: absolute;
+    width: 230px;
+    z-index: 1;
+    left: 48px;
+    /* bottom: 10px; */
+    border-radius: 12px;
+}
+img.img-animation-second {
+    position: absolute;
+    width: 196px;
+    z-index: 1;
+    left: 26px;
+    border-radius: 10px;
+    opacity: 0.6;
+    top: 15px;
+}
+img.img-animation-frist {
+    position: absolute;
+    width: 164px;
+    left: 10px;
+    top: 35px;
+    border-radius: 10px;
+    opacity: 0.5;
+}
+.history-search{
+    display:none;
+}
+.history-search.active{
+    display:block;
+}
+.tab-pain{
+    display:none;
+}
+.tab-pain.active{
+    display:flex;
+}
+.over-lists-songs-2 {
+    padding-top: 15px;
+    width: 100%;
+}
