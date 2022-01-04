@@ -275,13 +275,13 @@ const app ={
                 _this.nextSongs();
                audio.play();
             }
-            _this.scrollActive();
+          /*   _this.scrollActive(); */
 
         }
         prevsong.onclick = function(){
             _this.prevSongs();
             audio.play();
-            _this.scrollActive();
+           /*  _this.scrollActive(); */
 
         }
         randomsong.onclick = function(){
@@ -374,6 +374,8 @@ const app ={
     },
     reloadHandle: function(){ 
         //First load
+     
+        
         if(this.config.curentindex===undefined)
         {
             this.curentindex=0;
@@ -426,14 +428,15 @@ const app ={
             
         })
     },
-    scrollActive : function(){
+   /*  scrollActive : function(){
+
         setTimeout(function(){
             $('.list-song.active').scrollIntoView({
                 behavior: 'smooth',
                 block:'center',
             })
         },200)
-    },
+    }, */
     //Hiện thị thông tin bài hát đang phát
     loadSong: function(){
         const namesong = $('.footer__song-name');
@@ -453,7 +456,7 @@ const app ={
         this.defineProperty();
         this.loadConfig();
         this.handlesSong();
-        this.scrollActive();
+      /*   this.scrollActive(); */
 
     },
 }

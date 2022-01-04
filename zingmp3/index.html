@@ -91,54 +91,334 @@
                         <div class="overview-list active">TỔNG QUAN</div>
                         <div class="overview-list">BÀI HÁT</div>
                         <div class="overview-list">PLAYLIST</div>
-                        <div class="overview-list">NGHỆ SĨ</div>
                         <div class="overview-list">ALBUM</div>
                         <div class="overview-list">MV</div>
+                        <div class="overview-list">NGHỆ SĨ</div>
                         <div class="overview-list">TẢI LÊN</div>
                     </div>
                 </div>
-                  <!--Tổng quan-->
-                <div class="tabs-content">
-                    <div class="song-bar">
-                        <p style="font-size:20px;font-weight: 700;">Bài hát</p>
-                        <div class="tab-up-all">
-                            <div class="tabs-content-updata">
-                                <i class="bi bi-arrow-bar-up"></i>
-                                TẢI LÊN
-                            </div>
-                            <div class="tabs-content-playall">
-                                <i class="bi bi-caret-right-fill"></i>
-                                PHÁT TẤT CẢ
-                            </div>
-                        </div>
-                    </div>
-                </div>
+               
+              
                 <div class="tabs-pains">
+
+                        <!--Tổng quan-->
                     <div class="over-lists-animation-song tab-pain active">
-                        <div class="over-list-animation">
-                            <img src="./acset/img/animation2.webp" class="img-animation-frist" alt="">
-                            <img src="./acset/img/maimaikhonglaanh.webp" class="img-animation-second" alt="">
-                            <img src="./acset/img/animation3.webp" class="img-animation-three" alt="">
+                        <div class="tabs-content">
+                            <div class="song-bar">
+                                    <div class="hover__view-all">
+                                        <p style="font-size:20px;font-weight: 700;">Bài hát</p>
+                                        <div class="hover__view-all-content">
+                                            <a class="nav-view-all">TẤT CẢ</a>
+                                            <i class="bi bi-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                <div class="tab-up-all">
+                                    <div class="tabs-content-updata">
+                                        <i class="bi bi-arrow-bar-up"></i>
+                                        TẢI LÊN
+                                    </div>
+                                    <div class="tabs-content-playall">
+                                        <i class="bi bi-caret-right-fill"></i>
+                                        PHÁT TẤT CẢ
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <!--Hiện thị bài hát ở phần tổng quan-->
-                        <div class="over-lists-songs">
-        
+                        <!--Tong quan-->
+                        <div class="on-over-list">
+                            <div class="over-list-animation">
+                                <img src="./acset/img/animation2.webp" class="img-animation-frist" alt="">
+                                <img src="./acset/img/maimaikhonglaanh.webp" class="img-animation-second" alt="">
+                                <img src="./acset/img/animation3.webp" class="img-animation-three" alt="">
+                            </div>
+                            <!--Hiện thị bài hát ở phần tổng quan-->
+                            <div class="over-lists-songs">
+            
+                            </div>
+                        </div>
+
+                        <!--Play List-->
+                        <div class="over-list-container over-lyrics" >
+                            <div class="over-list-header">
+                                Playlist
+                                <div class="over-btn-slider">
+                                    <div class="hover__view-all-content">
+                                        <a class="nav-view-all">TẤT CẢ</a>
+                                        <i class="bi bi-chevron-right"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+                    
+                            <div class="over-lists-slider">
+                                <div class="over-list-slider">
+                                    <div class="over-list-slider-add-playlist">
+                                        <i class="bi bi-plus-lg"></i>
+                                        <p>Tạo playlist mới</p>
+                                    </div>
+                                </div>
+                                <div class="over-list-slider">
+                                    <div class="over-list-hidden">
+                                        <div class="over-list-hidden-zoom">
+                                            <img src="./acset/playlist/playlist1.webp" alt="">
+                                            <div class="over-list-hidden-hover">
+                                                <i class="bi bi-heart-fill" style="font-size: 18px;"></i>
+                                                <i class="bi bi-caret-right-fill" style="background: transparent;border: 1px solid;"></i>
+                                                <i class="bi bi-three-dots"></i>
+                                            </div>
+                                        </div>
+                                        <p>Bảng xếp hạng bài hát Hàn...</p>
+                                        <span>Zing mp3</span>
+                                    </div>
+                                </div>
+                                <div class="over-list-slider">
+                                    <div class="over-list-hidden">
+                                        <div class="over-list-hidden-zoom">
+                                            <img src="./acset/playlist/playlist2.webp" alt="">
+                                            <div class="over-list-hidden-hover">
+                                                <i class="bi bi-heart-fill" style="font-size: 18px;"></i>
+                                                <i class="bi bi-caret-right-fill" style="background: transparent;border: 1px solid;"></i>
+                                                <i class="bi bi-three-dots"></i>
+                                            </div>
+                                        </div>
+                                        <p>Trào Lưu Nhạc Hot</p>
+                                        <span>Zing mp3</span>
+                                    </div>
+                                </div>
+                                <div class="over-list-slider">
+                                    <div class="over-list-hidden">
+                                        <div class="over-list-hidden-zoom">
+                                            <img src="./acset/playlist/playlist3.webp" alt="">
+                                            <div class="over-list-hidden-hover">
+                                                <i class="bi bi-heart-fill" style="font-size: 18px;"></i>
+                                                <i class="bi bi-caret-right-fill" style="background: transparent;border: 1px solid;"></i>
+                                                <i class="bi bi-three-dots"></i>
+                                            </div>
+                                        </div>
+                                        <p>Top 100 Nhạc Hàn Quốc Hay…</p>
+                                        <span>Zing mp3</span>
+                                    </div>
+                                </div>
+                               
+                              
+                               
+                            </div>
+                        </div>
+                        <!--Album-->
+                        <div class="over-list-container over-lyrics">
+                            <div class="over-list-header">
+                                Album
+                                <div class="over-btn-slider">
+                                    <div class="hover__view-all-content">
+                                        <a class="nav-view-all">TẤT CẢ</a>
+                                        <i class="bi bi-chevron-right"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+                    
+                            <div class="over-lists-slider">
+                                <div class="over-list-slider ">
+                                    <div class="over-list-hidden">
+                                        <div class="over-list-hidden-zoom">
+                                            <img src="./acset/album/album1.webp" alt="">
+                                            <div class="over-list-hidden-hover">
+                                                <i class="bi bi-heart-fill" style="font-size: 18px;"></i>
+                                                <i class="bi bi-caret-right-fill" style="background: transparent;border: 1px solid;"></i>
+                                                <i class="bi bi-three-dots"></i>
+                                            </div>
+                                        </div>
+                                        <p>Issa Album</p>
+                                    </div>
+                                </div> 
+
+                                <div class="over-list-slider ">
+                                    <div class="over-list-hidden">
+                                        <div class="over-list-hidden-zoom">
+                                            <img src="./acset/album/album2.webp" alt="">
+                                            <div class="over-list-hidden-hover">
+                                                <i class="bi bi-heart-fill" style="font-size: 18px;"></i>
+                                                <i class="bi bi-caret-right-fill" style="background: transparent;border: 1px solid;"></i>
+                                                <i class="bi bi-three-dots"></i>
+                                            </div>
+                                        </div>
+                                        <p>Remember (Mini Album)</p>
+                                    </div>
+                                </div> 
+
+                                <div class="over-list-slider ">
+                                    <div class="over-list-hidden">
+                                        <div class="over-list-hidden-zoom">
+                                            <img src="./acset/album/album3.webp" alt="">
+                                            <div class="over-list-hidden-hover">
+                                                <i class="bi bi-heart-fill" style="font-size: 18px;"></i>
+                                                <i class="bi bi-caret-right-fill" style="background: transparent;border: 1px solid;"></i>
+                                                <i class="bi bi-three-dots"></i>
+                                            </div>
+                                        </div>
+                                        <p>THE ALBUM</p>
+                                    </div>
+                                </div> 
+                               
+                                <div class="over-list-slider    ">
+                                    <div class="over-list-hidden">
+                                        <div class="over-list-hidden-zoom">
+                                            <img src="./acset/album/album4.webp" alt="">
+                                            <div class="over-list-hidden-hover">
+                                                <i class="bi bi-heart-fill" style="font-size: 18px;"></i>
+                                                <i class="bi bi-caret-right-fill" style="background: transparent;border: 1px solid;"></i>
+                                                <i class="bi bi-three-dots"></i>
+                                            </div>
+                                        </div>
+                                        <p>Người Yêu Cũ (Gửi Cho Anh…</p>
+                                    </div>
+                                </div> 
+                              
+                            
+                            </div>
+                        </div>
+                        <!--MV-->
+                        <div class="over-list-container over-lyrics">
+                            <div class="over-list-header">
+                                MV
+                                <div class="over-btn-slider">
+                                    <div class="hover__view-all-content">
+                                        <a class="nav-view-all">TẤT CẢ</a>
+                                        <i class="bi bi-chevron-right"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+                    
+                            <div class="over-lists-slider">
+                                <div class="over-list-slider mv">
+                                    <div class="over-list-hidden">
+                                        <div class="over-list-hidden-zoom">
+                                            <img src="./acset/mv/mv1.webp" alt="">
+                                            <div class="over-list-hidden-hover">
+                                                <i class="bi bi-caret-right-fill" style="background: transparent;border: 1px solid;"></i>
+                                            </div>
+                                            <span style="position: absolute;padding: 3px 5px; background: rgba(0,0,0,.7); color: #fff;    right: 5px; bottom: 2px; border-radius: 5px;">03:40</span>
+                                        </div>
+                                        <div class="" style="display: flex;  margin-top: 15px;">
+                                            <img src="./acset/mv/img1.jpg" alt="" style="width:40px;border-radius: 50%;transform: scale(1);">
+                                            <div class="" style="margin-left: 10px;">
+                                                <p style="font-size: 14px;font-weight: 500;">Gone</p>
+                                                <p style="font-size: 12px;font-weight: 400;color:#a0a7a7;">ROSÉ</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="over-list-slider mv">
+                                    <div class="over-list-hidden">
+                                        <div class="over-list-hidden-zoom">
+                                            <img src="./acset/mv/mv2.webp" alt="">
+                                            <div class="over-list-hidden-hover">
+                                                <i class="bi bi-caret-right-fill" style="background: transparent;border: 1px solid;"></i>
+                                            </div>
+                                            <span style="position: absolute;padding: 3px 5px; background: rgba(0,0,0,.7); color: #fff;    right: 5px; bottom: 2px; border-radius: 5px;">03:40</span>
+                                        </div>
+                                        <div class="" style="display: flex;  margin-top: 15px;">
+                                            <img src="./acset/mv/img2.jpg" alt="" style="width:40px;border-radius: 50%;transform: scale(1);">
+                                            <div class="" style="margin-left: 10px;">
+                                                <p style="font-size: 14px;font-weight: 500;">LALISA</p>
+                                                <p style="font-size: 12px;font-weight: 400;color:#a0a7a7;">LISA</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="over-list-slider mv">
+                                    <div class="over-list-hidden">
+                                        <div class="over-list-hidden-zoom">
+                                            <img src="./acset/mv/mv3.webp" alt="">
+                                            <div class="over-list-hidden-hover">
+                                                <i class="bi bi-caret-right-fill" style="background: transparent;border: 1px solid;"></i>
+                                            </div>
+                                            <span style="position: absolute;padding: 3px 5px; background: rgba(0,0,0,.7); color: #fff;    right: 5px; bottom: 2px; border-radius: 5px;">03:40</span>
+                                        </div>
+                                        <div class="" style="display: flex;  margin-top: 15px;">
+                                            <img src="./acset/mv/img3.jpg" alt="" style="width:40px;border-radius: 50%;transform: scale(1);">
+                                            <div class="" style="margin-left: 10px;">
+                                                <p style="font-size: 14px;font-weight: 500;">Hơn cả yêu</p>
+                                                <p style="font-size: 12px;font-weight: 400;color:#a0a7a7;">Đức Phúc</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
                         </div>
                     </div>
+
+                       <!--Bài Hát-->
                     <div class="tab-pain">
+                        <div class="tabs-content">
+                            <div class="song-bar">
+                                <p style="font-size:20px;font-weight: 700;">Bài hát</p>
+                                <div class="tab-up-all">
+                                    <div class="tabs-content-updata">
+                                        <i class="bi bi-arrow-bar-up"></i>
+                                        TẢI LÊN
+                                    </div>
+                                    <div class="tabs-content-playall">
+                                        <i class="bi bi-caret-right-fill"></i>
+                                        PHÁT TẤT CẢ
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="over-lists-songs-2">
         
                         </div>
                     </div>
-                    <div class="tab-pain">
-                        3
+
+                       <!--Playlist-->
+                    <div class="tab-pain playlist" >
+                        <div class="over-list-container over-lyrics" style="padding-top: 0;">
+                            <div class="over-list-header">
+                                Playlist
+                            </div>
+                            
+                            <div class="over-lists-slider playlist">
+                                <div class="over-list-slider">
+                                    <div class="over-list-slider-add-playlist">
+                                       
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
                     </div>
+
+                    <!--Album-->
                     <div class="tab-pain">
-                        4
+                        <div class="over-list-container over-lyrics" style="padding-top: 0;">
+                            <div class="over-list-header">
+                                Album                            
+                            </div>
+                            <div class="over-lists-slider album">
+                                  
+                            </div>
+                            
+                        </div>
                     </div>
+                       <!--MV-->
                     <div class="tab-pain">
-                        5
+                        <div class="over-list-container over-lyrics" style="padding-top: 0;">
+                            <div class="over-list-header">
+                               MV                           
+                            </div>
+                            <div class="over-lists-slider mv">
+                                
+                                
+                            </div>
+                            
+                            
+                        </div>
                     </div>
+                    
+                       <!--Nghệ sĩ-->
+                    
+
                     <div class="tab-pain">
                         6
                     </div>
@@ -299,5 +579,6 @@
     </div>
     <script src="./script/script.js"></script>
     <script src="./script/animate.js"></script>
+    <script src="./script/album.js"></script>
 </body>
 </html>

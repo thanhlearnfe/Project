@@ -1,11 +1,14 @@
 const overviewtabs =$$('.overview-list')
 const tabspain = $$('.tab-pain')
-
+const viewalls = $$('.nav-view-all')
 
 
 overviewtabs.forEach(function(tab,index){
+
     const pane =tabspain[index]
     tab.onclick =function(){
+        console.log(index)
+
         $(".overview-list.active").classList.remove('active');
         $(".tab-pain.active").classList.remove('active');
 
@@ -15,6 +18,23 @@ overviewtabs.forEach(function(tab,index){
 
     }
 })
+
+
+viewalls.forEach(function(view,index){
+    const pane =tabspain[index+1];
+    const over = overviewtabs[index+1];
+    view.onclick =function(){
+       
+
+        $(".overview-list.active").classList.remove('active');
+        $(".tab-pain.active").classList.remove('active');
+
+       pane.classList.add('active');
+       over.classList.add('active');
+       $('.body-scroll').scrollTop=0 +'px';
+    }
+})
+
 
 //Hien thi the tim kiem
 const searchInput = $('.header-search-border input');
