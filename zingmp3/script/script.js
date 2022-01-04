@@ -1,6 +1,8 @@
 const $= document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
+const PLAYER_STORAGE_KEY ="MP3"
+
 
 const randomsong = $('.btn-random');
 const repeatsong = $('.btn-repeat');
@@ -19,8 +21,8 @@ const app ={
     isPlaying:false,
     isRandom:false,
     isRepeat:false,
- 
-    
+    config: JSON.parse(localStorage.getItem(PLAYER_STORAGE_KEY ))||{},
+
     songs:[
         {
             id:1,
@@ -178,7 +180,10 @@ const app ={
         },
         
     ],
-    
+    setConfig: function(key, value) {
+        this.config[key] = value;
+        localStorage.setItem(PLAYER_STORAGE_KEY,JSON.stringify(this.config))
+    },
     //Hiện Thị Dữ Liệu Bài Hát
     renderSong: function(){
         const _this = this;
@@ -243,8 +248,6 @@ const app ={
     //Xử lí bài hát
     handlesSong: function (){
         const _this = this;
-        
-
         //Click play pause
         togglesong.onclick =function(){    
            if(_this.isPlaying){
@@ -272,20 +275,24 @@ const app ={
                 _this.nextSongs();
                audio.play();
             }
+            _this.scrollActive();
+
         }
         prevsong.onclick = function(){
             _this.prevSongs();
-           audio.play();
+            audio.play();
+            _this.scrollActive();
+
         }
         randomsong.onclick = function(){
             _this.isRandom = !_this.isRandom;
-
+            _this.setConfig('isRandom',_this.isRandom);
             randomsong.classList.toggle("active",_this.isRandom)
             
         }
         repeatsong.onclick = function(){
             _this.isRepeat = !_this.isRepeat;
-
+            _this.setConfig('isRepeat',_this.isRepeat);
             repeatsong.classList.toggle("active",_this.isRepeat)
         }
         audio.ontimeupdate = function(){
@@ -308,7 +315,6 @@ const app ={
             var color =  'linear-gradient(90deg, rgb(255 255 255)' + `${timenow}` + '% , rgb(214 214 214 / 26%)' + `${timenow}` + '%)';
             progress.style.background = color;
             
-
         }
         audio.onloadeddata = function(){
             var seconds = Math.floor((audio.duration%60))
@@ -330,8 +336,8 @@ const app ={
             if(findindex || heart){
                 if(findindex){
                     _this.curentindex = Number(findindex.dataset.index);
-                    _this.renderSong();
-                    _this.loadSong();
+                    _this.loadConfig();
+
                     audio.play();
                 }
                 if(heart){
@@ -348,8 +354,7 @@ const app ={
             if(findindex || heart){
                 if(findindex){
                     _this.curentindex = Number(findindex.dataset.index);
-                    _this.renderSong();
-                    _this.loadSong();
+                    _this.loadConfig();
                     audio.play();
                 }
                 if(heart){
@@ -360,21 +365,42 @@ const app ={
 
         }
     },
+    loadConfig: function(){
+        this.setConfig("curentindex",this.curentindex);
+        this.loadSong();
+        this.renderSong();
+        
+       
+    },
+    reloadHandle: function(){ 
+        //First load
+        if(this.config.curentindex===undefined)
+        {
+            this.curentindex=0;
+        }
+        else {
+            this.curentindex = this.config.curentindex;
+            this.isRandom=this.config.isRandom;
+            this.isRepeat=this.config.isRepeat;
+        }
+        randomsong.classList.toggle("active",this.isRandom)
+        repeatsong.classList.toggle('active',this.isRepeat);
+    },
+    
     nextSongs: function(){
         this.curentindex++;
         if(this.songs.length-1 < this.curentindex){
             this.curentindex =0;
         }
-        this.loadSong();
-        this.renderSong();
+        this.loadConfig();
     },
     prevSongs: function(){
         this.curentindex--;
         if(this.curentindex<0){
             this.curentindex = this.songs.length-1;
         }
-        this.loadSong();
-        this.renderSong();
+        this.loadConfig();
+
 
     },
     randomSongs: function(){
@@ -383,7 +409,8 @@ const app ={
             newindex = Math.floor(Math.random() * this.songs.length);
         } while  (newindex === this.curentindex)
         this.curentindex = newindex;
-        this.loadSong();
+        this.loadConfig();
+
         console.log(this.curentindex)
     },
     repeatSongs: function(){
@@ -399,6 +426,14 @@ const app ={
             
         })
     },
+    scrollActive : function(){
+        setTimeout(function(){
+            $('.list-song.active').scrollIntoView({
+                behavior: 'smooth',
+                block:'center',
+            })
+        },200)
+    },
     //Hiện thị thông tin bài hát đang phát
     loadSong: function(){
         const namesong = $('.footer__song-name');
@@ -410,20 +445,16 @@ const app ={
         namesinger.textContent = this.curentSong.singer;
         imgsong.src = this.curentSong.img;
         audio.src = this.curentSong.path;
-        this.renderSong();
+        
     },
-   
+    
     run: function(){
-       
-        this.renderSong();
+        this.reloadHandle();
         this.defineProperty();
+        this.loadConfig();
         this.handlesSong();
-        this.loadSong();
-       
+        this.scrollActive();
+
     },
 }
 app.run();
-
-
-
-

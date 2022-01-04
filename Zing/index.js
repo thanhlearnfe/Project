@@ -1,7 +1,7 @@
 var $ =document.querySelector.bind(document);
 var $$ =document.querySelectorAll.bind(document);
 
-const PLAYER_STORAGE_KEY ="mode"
+const PLAYER_STORAGE_KEY ="MP3"
 
 
 const heading = $('header marquee')
@@ -285,6 +285,11 @@ const app ={
             random.classList.toggle('active',_this.isRandom);
         },
         //
+        btnrepeat.onclick = function(){
+            _this.isRepeat=!_this.isRepeat;
+            _this.setConfig('isRepeat',_this.isRepeat);
+            btnrepeat.classList.toggle('active',_this.isRepeat);
+        }
         audio.onended = function(){
             if($('.btn-repeat.active')){
                 audio.play();
@@ -295,11 +300,7 @@ const app ={
             
         }
         //
-        btnrepeat.onclick = function(){
-            _this.isRepeat=!_this.isRepeat;
-            _this.setConfig('isRepeat',_this.isRepeat);
-            btnrepeat.classList.toggle('active',_this.isRepeat);
-        }
+        
         //
         playlist.onclick = function(e){
             const songNode =e.target.closest('.song:not(.active)')
@@ -415,26 +416,21 @@ const app ={
         timepresent.textContent = Math.floor(( audio.currentTime)/60)+':'+ (timesecond>9 ? timesecond :'0' + timesecond);
     },
     loadAndSave: function(){
-        this.setConfig("currentIndex",this.curentindex)
-        this.setConfig("currentIndex",this.curentindex);
+        this.setConfig("currentIndex",this.curentindex);    
         this.loadCurrentSong();
         this.render();
        
     },
     reloadHandle: function(){ 
-        //First load
         if(this.config.curentindex===undefined)
         {
             this.curentindex=0;
-            this.config.volume=100;
         }
         else {
-            this.curentindex = this.config.curentindex;
+            this.curentindex = this.config.currentIndex;
             this.isRandom=this.config.isRandom;
-            this.isRepeat=this.config.isRepeat;
-              
+            this.isRepeat=this.config.isRepeat;        
         }
-        
         random.classList.toggle('active',this.isRandom);
         btnrepeat.classList.toggle('active',this.isRepeat);
     },
@@ -446,7 +442,7 @@ const app ={
     start:function(){
         //Render danh sách bài hát
        
-        this.reloadHandle();
+    
          //Định nghĩa thuốcj tính object
          this.defineProperties();
         //Xử lí sự kiện
