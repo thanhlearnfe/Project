@@ -26,38 +26,41 @@ const app ={
     songs:[
         {
             id:1,
-            name:"Coming Home",
-            singer:"Dash Berlin,Bo Bruce",
-            img:"./acset/img/img5.webp",
-            path:"./acset/song/song5.mp3",
-            album:"We Are,Pt.2",
-            time:"04:33"
+            name:"Impossible",
+            singer:"Shontelle",
+            img:"./acset/img/songS1.webp",
+            path:"./acset/song/songS2.mp3",
+            album:"",
+            time:"03:46"
         },
         {
             id:2,
-            name:"Đông Kiếm Em",
-            singer:"Vũ",
-            img:"./acset/img/img2.png",
-            path:"./acset/song/song2.mp3",
-            album:" ",
-            time:"04:06"
-        },{
+            name:"Dancing With Your Ghost",
+            singer:"Sasha Alex Sloan",
+            img:"./acset/img/songS2.webp",
+            path:"./acset/song/songS1.mp3",
+            album:"",
+            time:"03:17"
+        },
+        {
             id:3,
-            name:"Những Gì Anh Nói",
-            singer:"Bozitt",
-            img:"./acset/img/img3.webp",
-            path:"./acset/song/song3.mp3",
-            album:"Những Gì Anh Nói...",
-            time:"06:25"
-        },{
+            name:"Dusk Till Dawn",
+            singer:"ZAYN,Sia",
+            img:"./acset/img/songS3.webp",
+            path:"./acset/song/songS3.mp3",
+            album:"",
+            time:"04:27"
+        },
+        {
             id:4,
-            name:"Mãi Chẳng Thuộc Về Nhau",
-            singer:"Bozitt",
-            img:"./acset/img/img4.webp",
-            path:"./acset/song/song4.mp3",
-            album:"Mãi Chẳng Thuộc Về Nhau...",
-            time:"06:21"
-        },{
+            name:"Bad Lier",
+            singer:"Dragons",
+            img:"./acset/img/songS4.webp",
+            path:"./acset/song/songS4.mp3",
+            album:"",
+            time:"04:12"
+        }
+        ,{
             id:5,
             name:"Mãi Mãi Không Phải Anh",
             singer:"Thanh Bình",
@@ -178,6 +181,40 @@ const app ={
             album:"",
             time:"04:12"
         },
+        {
+            id:19,
+            name:"Coming Home",
+            singer:"Dash Berlin,Bo Bruce",
+            img:"./acset/img/img5.webp",
+            path:"./acset/song/song5.mp3",
+            album:"We Are,Pt.2",
+            time:"04:33"
+        },
+        {
+            id:20,
+            name:"Đông Kiếm Em",
+            singer:"Vũ",
+            img:"./acset/img/img2.png",
+            path:"./acset/song/song2.mp3",
+            album:" ",
+            time:"04:06"
+        },{
+            id:21,
+            name:"Những Gì Anh Nói",
+            singer:"Bozitt",
+            img:"./acset/img/img3.webp",
+            path:"./acset/song/song3.mp3",
+            album:"Những Gì Anh Nói...",
+            time:"06:25"
+        },{
+            id:22,
+            name:"Mãi Chẳng Thuộc Về Nhau",
+            singer:"Bozitt",
+            img:"./acset/img/img4.webp",
+            path:"./acset/song/song4.mp3",
+            album:"Mãi Chẳng Thuộc Về Nhau...",
+            time:"06:21"
+        }
         
     ],
     setConfig: function(key, value) {
@@ -378,11 +415,19 @@ const app ={
 
         }
     },
+    defineProperty: function(){
+        const _this = this;
+        Object.defineProperty(this,'curentSong',{
+            get: function(){
+                return _this.songs[_this.curentindex];
+            }
+            
+        })
+    },
     loadConfig: function(){
         this.setConfig("curentindex",this.curentindex);
         this.loadSong();
         this.renderSong();
-        
        
     },
     reloadHandle: function(){ 
@@ -426,21 +471,13 @@ const app ={
         this.curentindex = newindex;
         this.loadConfig();
 
-        console.log(this.curentindex)
+        console.log(this.curentSong)
     },
     repeatSongs: function(){
         this.loadSong();
     },
     //Tạo thuộc tính bài hát đang phát
-    defineProperty: function(){
-        const _this = this;
-        Object.defineProperty(this,'curentSong',{
-            get: function(){
-                return _this.songs[_this.curentindex];
-            }
-            
-        })
-    },
+    
    
     //Hiện thị thông tin bài hát đang phát
     loadSong: function(){
