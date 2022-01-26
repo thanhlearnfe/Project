@@ -14,12 +14,13 @@ html{
     line-height: 1.6rem;
     font-family: Inter, sans-serif;
     background-size: 192em auto;
-    color:#fff;
 
 }
 body{
     background-image: url(../background/rose.jpg);
     background-size: 1920px auto;
+    color: var(--color-text);
+
 }
 body::-webkit-scrollbar{
     height: 0px;
@@ -80,7 +81,7 @@ body::-webkit-scrollbar{
     font-size: 16px;
     padding: 5px;
     height: fit-content;
-    background: #132958;
+    background: var(--active-bgr);
     border-radius:50%;
 }
 .avata-updata-vip {
@@ -93,9 +94,9 @@ body::-webkit-scrollbar{
     margin-right: 5px;
 }
 .avata-updata-code {
-    background: #132958;
+    background: var(--active-bgr);
     height: fit-content;
-    color: #fff;
+    color: var(--color-text);
     padding: 6px 19px;
     border-radius: 18px;
     font-size: 12px;
@@ -117,7 +118,7 @@ body::-webkit-scrollbar{
 
 .overview{
     display: flex;
-    background: #132958;
+    background: var(--active-bgr);
     padding: 3px;
     width: fit-content;
     border-radius: 25px;
@@ -131,6 +132,7 @@ body::-webkit-scrollbar{
 .song-bar{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 .tab-up-all {
     display: flex;
@@ -139,7 +141,7 @@ body::-webkit-scrollbar{
     padding: 6px 19px;
     margin-right: 7px;
     font-size: 12px;
-    background: #132958;
+    background: var(--active-bgr);
     border-radius: 18px;
     border: 1px solid #ffffff24;
 }
@@ -147,13 +149,13 @@ body::-webkit-scrollbar{
     padding: 6px 19px;
     margin-right: 7px;
     font-size: 12px;
-    background: #3460f5;
+    background: var(--hear-fill);
     border-radius: 18px;
     border: 1px solid #ffffff24;
+    color: #fff;
 }
 p{
     font-size:1.3rem;
-    color: #fff;
 }
 input{
     height:0.4rem;
@@ -226,7 +228,7 @@ input{
 .over-list-slider span{
     font-size:12px;
     font-weight:400;
-    color:rgba(255, 255, 255, 0.5);
+    color:var(--link-color-text);
 }
 .over-list-slider-add-playlist {
     display: flex;
@@ -286,7 +288,8 @@ input{
 .list-song-name-singer p{
     font-size: 12px;
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.5);
+    color:var(--link-color-text);
+
 }
 .list-song-album {
     flex: 2;
@@ -301,19 +304,20 @@ input{
 .list-song-album p{
     font-size: 12px;
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.5);
+    color:var(--link-color-text);
 }
 span.time-during {
-    color: rgba(255, 255, 255, 0.5);
+    color:var(--link-color-text);
     font-size: 12px;
 }
 i.bi.bi-heart-fill {
     font-size: 13px;
+    color: var(--hear-fill);
 }
 #footer{
     position:fixed;
     bottom: 0;
-    background-color: #051740;
+    background-color: var(--footer-bgr);
     width: 100%;
     height: 9rem;
     display: flex;
@@ -356,7 +360,7 @@ i.bi.bi-heart-fill {
     border-radius:0.5rem
 }
 .btn{
-    color: #fff;
+    color: var(--color-text);
 }
 .control{
     display: flex;
@@ -387,7 +391,7 @@ i.bi.bi-heart-fill {
     font-size: 1.3rem;
 }
 .bi-heart-fill{
-    color:rgb(62, 74, 243);
+    color:var(--heart-fill);
 }
 .control-input-group {
     display: flex;
@@ -461,13 +465,13 @@ span.span-hot {
     font-size: 10px;
     padding: 0px 4px;
     border-radius: 2px;
-    color: #fff;
+    color: var(--color-text);
     margin-left: 15px;
     margin-bottom: 8px;
 }
 .body-left{
     width: 240px;
-    background-color: hsla(0,0%,100%,0.05);
+    background-color: var(--colorbgr);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -490,7 +494,7 @@ span.span-hot {
 .nav-bar{
     font-size: 13px;
     font-weight:600;
-    color:#ffffffc7;
+    color: var(--color-text);
 }
 .nav-bar-active{
     padding: 7px 25px;
@@ -557,7 +561,7 @@ span.marketing-vip:hover{
 }
 #header{
     height: 70px;
-    background:#061d50;
+    background:var(--search-bgr);
     margin-left: 240px;
     display: flex;
     padding: 0 30px;
@@ -585,22 +589,22 @@ span.marketing-vip:hover{
 .header-search-border {
     display: flex;
     width: 77%;
-    background: #132958;
+    background: var(--active-bgr);
     border-radius: 18px;
     align-items: center;
-    z-index: 3;
+    z-index: 5;
 }
 .header-search input{
     width: 75%;
     padding: 18px 0px;
     outline: none;
   background:transparent;
-    color: #fff;
+    color: var(--color-text);
     margin-left: 15px;
 }
 .header-acount-border {
     cursor: pointer;
-    background: #132958;
+    background: var(--active-bgr);
     font-size: 20px;
     height: 40px;
     border-radius: 50%;
@@ -612,7 +616,6 @@ span.marketing-vip:hover{
 }
 i.bi.bi-search {
     font-size: 19px;
-    color: #ffffffa1;
     margin-left:10px;
 }
 i.bi.bi-arrow-right {
@@ -622,7 +625,7 @@ i.bi.bi-arrow-right {
 .history-search{
     position: absolute;
     width: 77%;
-    background: #192f60;
+    background: var( --history-search-bgr);
     top: 41px;
     z-index: 4;
     border-radius: 0px 0px 18px 18px;
@@ -654,7 +657,7 @@ i.bi.bi-arrow-right {
     line-height:21px;
 }
 .history-search-song:hover{
-    background: #ffffff4a;
+    background: var(--search-hover);
     border-radius: 5px;
     margin-right: 10px;
 }
@@ -713,4 +716,21 @@ i.bi.bi-arrow-right {
 }
 .over-list-slider.mv {
     width: 33.3%;
+}
+.info-singer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+} 
+.music-coner {
+    padding: 6px 19px;
+    background: hsla(0,0%,100%,0.1);
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.music-coner:hover{
+    background:hsl(0deg 6% 50% / 14%);
 }

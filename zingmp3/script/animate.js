@@ -40,11 +40,11 @@ viewalls.forEach(function(view,index){
 const searchInput = $('.header-search-border input');
 searchInput.onclick = function() {
     $('.history-search').classList.add('active');
-    $('.header-search-border').style.background = '#192f60';
+    $('.header-search-border').style.background = 'var( --history-search-bgr)';
 }
 $('#body').onclick = function() {
     $('.history-search').classList.remove('active');
-    $('.header-search-border').style.background = '#132958';
+    $('.header-search-border').style.background = 'var(--active-bgr)';
 }
 
 

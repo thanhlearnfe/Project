@@ -1,4 +1,20 @@
+:root{
+    
 
+    --footer-bgr:#051740;
+    --colorbgr:hsla(0,0%,100%,0.05);
+    --active-bgr:#132958;
+    --search-bgr:#061d50;
+    --color-text:#fff;
+    --overview-bgr:#637191;
+    --history-search-bgr:#192f60;
+    --link-color-text:hsla(0,0%,100%,0.15);
+    --hear-fill:rgb(62, 74, 243);
+    --list-overview:#fff;
+    --search-hover:#ffffff4a;
+    --progress-active:#fff;
+    --progress-player:hsla(0,0%,100%,0.3);
+}
 .btn .bi-pause-circle{
     display:none;
 }
@@ -19,15 +35,16 @@
     color: #1f3cb9;
 }
 .list-song.active{
-    background: #132958;
+    background: var(--active-bgr);
 }
 .list-song:hover{
-    background: #132958;
+    background: var(--active-bgr);
     cursor: pointer;
 }
 .overview-list.active {
-    background: #637191;
+    background: var(--overview-bgr);
     border-radius: 25px;
+    color:var(--list-overview);
 }
 .list-song-album-time .bi-heart-fill.active{
     color: #fff;
@@ -105,4 +122,11 @@ img.img-animation-frist {
 }
 .list-song:hover .list-song-album i{
     display: block;
+}
+i.bi.bi-caret-right-fill {
+    color: #fff;
+}
+.nav-bar-active.active{
+    background: var(--colorbgr);
+    color: var(--list-overview);
 }

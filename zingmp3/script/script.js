@@ -349,7 +349,7 @@ const app ={
             
             if(audio.duration){
                 const timenow = Math.floor((audio.currentTime/audio.duration) *100);
-                var color =  'linear-gradient(90deg, rgb(255 255 255) ' + `${timenow}` + '% , rgb(214 214 214 / 26%)' + `${timenow}` + '%)';
+                var color =  'linear-gradient(90deg, var(--progress-active) ' + `${timenow}` + '% , var(--progress-player)' + `${timenow}` + '%)';
                 progress.style.background = color;
                 progress.value = timenow;
                 var seconds = Math.floor((audio.currentTime%60))
@@ -362,7 +362,7 @@ const app ={
             const seek = audio.duration / 100 * e.target.value;            
             audio.currentTime=seek;
             const timenow =  e.target.value;
-            var color =  'linear-gradient(90deg, rgb(255 255 255)' + `${timenow}` + '% , rgb(214 214 214 / 26%)' + `${timenow}` + '%)';
+            var color =  'linear-gradient(90deg, var(--progress-active) ' + `${timenow}` + '% , var(--progress-player)' + `${timenow}` + '%)';
             progress.style.background = color;
             
         }

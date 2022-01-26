@@ -69,7 +69,6 @@ const listalbum={
         this.renderAlbum();
     }
 }
-listalbum.run();
 
 const playlists={
     playlist:[
@@ -158,7 +157,6 @@ const playlists={
         $('.over-lists-slider.playlist').innerHTML = htmls.join('');
     }
 }
-playlists.renderPlaylist();
 
 const listmv={
     mvs:[
@@ -253,4 +251,98 @@ const listmv={
         $('.over-lists-slider.mv').innerHTML = htmls.join('');
     }
 }
+
+const listsinger={
+    singers:[
+       {
+           id:1,
+           name:'LISA',
+           img:'./acset/singer/singer1.webp',
+           like:'67K quan tâm'
+       },
+       {
+        id:2,
+        name:'IU',
+        img:'./acset/singer/singer2.webp',
+        like:'244K quan tâm'
+        },
+        {
+         id:3,
+         name:'Bích Phương',
+         img:'./acset/singer/singer3.webp',
+         like:'383K quan tâm'
+         }
+         ,{
+        id:4,
+        name:'Hòa Minzy',
+        img:'./acset/singer/singer4.webp',
+        like:'221K quan tâm'
+        }
+        ,{
+            id:5,
+            name:'JustaTee',
+            img:'./acset/singer/singer5.webp',
+            like:'208K quan tâm'
+        }
+        ,{
+        id:6,
+        name:'Lou Hoàng',
+        img:'./acset/singer/singer6.webp',
+        like:'144K quan tâm'
+        }
+        ,{
+            id:7,
+            name:'Chi Dân',
+            img:'./acset/singer/singer7.webp',
+            like:'533K quan tâm'
+        }
+        ,{
+            id:8,
+            name:'SOOBIN',
+            img:'./acset/singer/singer8.webp',
+            like:'471K quan tâm'
+        }
+        ,{
+            id:9,
+            name:'Sơn Tùng M-TP',
+            img:'./acset/singer/singer9.webp',
+            like:'2.3M quan tâm'
+        }
+        ,{
+            id:10,
+            name:'Trịnh Thăng Bình',
+            img:'./acset/singer/singer10.webp',
+            like:'239K quan tâm'
+        } 
+    ],
+    renderSinger:function(){
+        var htmls = this.singers.map(function(singer){
+            return `
+                <div class="over-list-slider ">
+                    <div class="over-list-hidden">
+                        <div class="over-list-hidden-zoom" style="border-radius: 50%;">
+                            <img src="${singer.img}" alt="" ">
+                            <div class="over-list-hidden-hover">
+                                <i class="bi bi-caret-right-fill" style="background: transparent;border: 1px solid;"></i>
+                            </div>
+                        </div>
+                        <div class="info-singer">
+                            <p style="font-size: 14px;font-weight: 500;">${singer.name}</p>
+                            <p style="font-size: 12px;font-weight: 400;color:#a0a7a7;">${singer.like}</p>
+                            <div class="music-coner">
+                                <i class="bi bi-shuffle" style="margin-left:5px;"></i>
+                                GÓC NHẠC
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `
+        })
+        $('.over-lists-slider.singer').innerHTML = htmls.join('');
+        console.log( $('.over-lists-slider.singer'))
+    }
+}
+listalbum.run();
+playlists.renderPlaylist();
 listmv.renderMV();
+listsinger.renderSinger();
