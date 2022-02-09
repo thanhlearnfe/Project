@@ -423,7 +423,7 @@ i.bi.bi-heart-fill {
   width: 100%;
   -webkit-appearance: none;
   height: 3px;
-  background: rgb(214 214 214 / 26%);
+  background: var(--progress-player);
   outline: none;
   border-radius: 4px;
 }
@@ -733,4 +733,104 @@ i.bi.bi-arrow-right {
 }
 .music-coner:hover{
     background:hsl(0deg 6% 50% / 14%);
+}
+#background {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 70%;
+    background: #192f60;
+    z-index: 100;
+    margin: 0 15%;
+    border-radius: 8px;
+    display: none;
+}
+.background_title {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 20px 30px;
+    margin: 0;
+    color: var(--color-text);
+}
+.close-background {
+    font-size: 30px;
+    padding: 5px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    color: var(--color-text);
+}
+.background_them {
+    padding: 0 30px;
+}
+.backgrounds-them {
+    display: flex;
+    flex-wrap: wrap;
+}
+.background-them {
+    padding: 0 7px;
+    margin-bottom: 20px;
+}
+.background-mini-img{
+    width: 100%;
+    border-radius:5px;
+    transition-duration: 1s;
+}
+.background-mini-img-zoom:hover .background-mini-img{
+    transform: scale(1.1);
+}
+.background_them-header {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    line-height: 27px;
+}
+.background_them-body {
+    width: 20%;
+}
+.background-mini-img-zoom{
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    /* max-height: fit-content; */
+    display: flex;
+    border-radius:5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    position: relative;
+}
+.background-mini-img-zoom:hover .background-mini-img-hover{
+    display:flex;
+}
+.background-mini-img-hover {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: #1b1b1abd;
+    justify-content: center;
+    align-items: center;
+}
+span.apply {
+    padding: 5px 19%;
+    background: var(--hear-fill);
+    border-radius: 8px;
+    font-weight: 500;
+}
+span.apply:hover{
+    opacity: 0.8;
+}
+span.preview {
+    margin-top: 10px;
+    padding: 5px 15%;
+    border-radius: 8px;
+    background: #2d2c2ab8;
+    border: 1px solid #ffffff75;
+    font-weight: 500;
+}
+span.preview:hover{
+    opacity: 0.8;
 }

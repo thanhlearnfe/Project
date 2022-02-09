@@ -339,7 +339,6 @@ const listsinger={
             `
         })
         $('.over-lists-slider.singer').innerHTML = htmls.join('');
-        console.log( $('.over-lists-slider.singer'))
     }
 }
 listalbum.run();

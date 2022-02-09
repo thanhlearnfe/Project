@@ -25,7 +25,13 @@
 .btn-toggle-play.active .bi-play-circle{
     display:none;
 }
-.btn-lyric .bi-volume-mute{
+.volume .bi-volume-mute{
+    display:none;
+}
+.volume.active .bi-volume-mute{
+    display:block;
+}
+.volume.active .bi-volume-up{
     display:none;
 }
 .btn-random.active{

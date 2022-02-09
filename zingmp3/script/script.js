@@ -15,12 +15,14 @@ const progress = $('.progress');
 const nextsong = $('.btn-btn-next')
 const prevsong = $('.btn-prev');     
 const songsactive = $('.over-lists-songs')
-const songsactive2 = $('.over-lists-songs-2')
+const songsactive2 = $('.over-lists-songs-2');
+const volume = $('.volume')
 const app ={
     curentindex:0,
     isPlaying:false,
     isRandom:false,
     isRepeat:false,
+    isMuted:false,
     config: JSON.parse(localStorage.getItem(PLAYER_STORAGE_KEY ))||{},
 
     songs:[
@@ -397,7 +399,18 @@ const app ={
             }
 
         }
-
+        // Tắt bật âm
+        volume.onclick = function(){
+            $('.volume').classList.toggle('active');
+            if(_this.isMuted == false){
+                audio.muted = true;
+                _this.isMuted = true;
+            }
+            else{
+                audio.muted = false;
+                _this.isMuted = false;
+            }
+        }
         songsactive2.onclick = function(e){
             const findindex = e.target.closest('.list-song:not(.active)');
             const heart = e.target.closest('.list-song-album-time .bi-heart-fill');
