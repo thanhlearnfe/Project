@@ -42,13 +42,6 @@ searchInput.onclick = function() {
     $('.history-search').classList.add('active');
     $('.header-search-border').style.background = 'var( --history-search-bgr)';
 }
-$('#body').onclick = function() {
-    $('.history-search').classList.remove('active');
-    $('.header-search-border').style.background = 'var(--active-bgr)';
-}
-
-
-
 
 //Hieu ung chuyen anh
 $('img.img-animation-three').animate([

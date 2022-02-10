@@ -432,7 +432,7 @@ i.bi.bi-heart-fill {
   appearance: none;
   width: 10px;
   height: 10px;
-  background-color: rgb(255, 255, 255);
+  background: var(--progress-active);
   cursor: pointer;
   border-radius: 50%;
 }
@@ -445,13 +445,14 @@ i.bi.bi-heart-fill {
     -webkit-transition: 0.2s;
     transition: opacity 0.2s;
     border-radius: 4px;
+    background: var(--progress-player);
 }
 .volume::-webkit-slider-thumb{
     -webkit-appearance: none;
     appearance: none;
     width: 7px;
     height: 7px;
-    background-color: rgb(184, 23, 216);
+    background: var(--progress-active);
     cursor: pointer;
     border-radius: 50%;
 }
@@ -677,6 +678,7 @@ i.bi.bi-arrow-right {
     padding:8px;
     border-radius:50%;
     margin: 10px;
+    color: #fff;
 }
 .over-list-hidden-hover i:hover{
     background: #9c9292ba;
