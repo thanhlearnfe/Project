@@ -74,3 +74,19 @@ $('img.img-animation-frist').animate([
 })
 
 
+// UI/UX body left
+const tabsbody =$$('.body-scroll')
+const tabsleft = $$('.nav-bar-active')
+
+
+tabsleft.forEach(function(left,index){
+    const tabbody = tabsbody[index];
+    left.onclick = function(){
+        $('.nav-bar-active.active').classList.remove('active')
+        $('.body-scroll.active').classList.remove('active')
+        this.classList.add('active')
+        tabbody.classList.add('active')
+
+    }
+})
+// Hiệu ứng slide

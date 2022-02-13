@@ -14,6 +14,7 @@
     --search-hover:#ffffff4a;
     --progress-active:#fff;
     --progress-player:hsla(0,0%,100%,0.3);
+    --bgr-theme:#192f60;
 }
 .btn .bi-pause-circle{
     display:none;
@@ -135,4 +136,7 @@ i.bi.bi-caret-right-fill {
 .nav-bar-active.active{
     background: var(--colorbgr);
     color: var(--list-overview);
+}
+.body-scroll.active{
+    display: block;
 }

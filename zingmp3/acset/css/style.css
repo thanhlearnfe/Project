@@ -46,6 +46,7 @@ body::-webkit-scrollbar{
     overscroll-behavior: contain;
     will-change: scroll-position;
     padding-right: 30px;
+    display: none;
 
 }
 #body{
@@ -381,7 +382,7 @@ i.bi.bi-heart-fill {
 }
 .footer__song-singer{
     font-size:1.2rem;
-    color:#aba398c7;
+    color:var(--link-color-text);
 }
 .footer__song-.like{
     margin-left: 1rem;
@@ -602,6 +603,8 @@ span.marketing-vip:hover{
   background:transparent;
     color: var(--color-text);
     margin-left: 15px;
+    font-size: 14px;
+    font-family: 'Inter';
 }
 .header-acount-border {
     cursor: pointer;
@@ -741,7 +744,7 @@ i.bi.bi-arrow-right {
     top: 0;
     height: 100%;
     width: 70%;
-    background: #192f60;
+    background: var(--bgr-theme);
     z-index: 100;
     margin: 0 15%;
     border-radius: 8px;
@@ -835,4 +838,197 @@ span.preview {
 }
 span.preview:hover{
     opacity: 0.8;
+}
+
+.body-scroll2{
+    padding-right: 59px;
+}
+.over-lists-slider2{
+    width: 103.7%;
+    cursor: pointer;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    backface-visibility: hidden;
+}
+.row:hover .explore__slide-move{
+    display: flex;
+}
+.col.l-12.m-12.c-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    
+}
+.explore__slide-item {
+    top: 50%;
+    width: 32%;
+    padding: 0 1%;
+    position: absolute;
+    transition: all 0.6s;
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+    cursor: pointer;
+}
+
+.explore__slide-item.first {
+    z-index: 9;
+    transform: translate( calc(0px - 100%), -50%);
+    transition: transform 0.6s ease-in-out;
+}
+
+
+
+.explore__slide-item.second {
+    z-index: 10;
+    transform: translate( 0, -50%);
+    transition: transform 0.6s ease-in-out;
+}
+
+.explore__slide-item.third {
+    z-index: 9;
+    transform: translate( 100%, -50%);
+    transition: transform 0.6s ease-in-out;
+}
+
+.explore__slide-item.fourth {
+    opacity: 0;
+    z-index: 8;
+    transform: translate( 50%, -50%);
+}
+
+.explore__slide-item.fifth {
+    opacity: 0;
+    z-index: 6;
+    transform: translate( 0, -50%);
+}
+
+.explore__slide-item.sixth {
+    opacity: 0;
+    z-index: 5;
+    transform: translate( 0, -50%);
+}
+
+.explore__slide-item.next {
+    transition: transform 0.3s 0.3s ease-out, opacity 0.3s 0.3s linear;
+}
+
+.explore__slide-item.prev {
+    transition: transform 0.3s ease-in, opacity 0.3s linear;
+}
+
+.explore__slide--container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    min-height: 15.2vw;
+    transform-style: preserve-3d;
+}
+.row__item-display {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+.slide__img {
+    width: 100%;
+    border-radius: 8px;
+}
+.explore__slide-move {
+    display: none;
+    z-index: 22;
+    width: 100%;
+    position: relative;
+}
+.slide__move-btn.btn--prev {
+    left: 10px;
+    position: absolute;
+    top: -30px;
+    width: 55px;
+    height: 55px;
+    background: #9fabab63;
+    border-radius: 50%;
+    display: flex;
+
+}
+
+.slide__move-btn.btn--prev i {
+    transform: translate(-2px, -1px);
+}
+
+.slide__move-btn.btn--next {
+    position: absolute;
+    right: 10px;
+    top: -30px;
+    width: 55px;
+    height: 55px;
+    background: #c5cfcf63;
+    border-radius: 50%;
+    display: flex;
+}
+.slide__move-btn.btn--next:hover{
+    background: #181d1d6b;
+}
+.slide__move-btn.btn--prev:hover{
+    background: #181d1d6b;
+}
+.slide__move-btn.btn--next i {
+    transform: translateX(1px);
+}
+.slide__move-btn i {
+    margin: auto;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+.over-lyrics2{
+    margin-top: 0;
+}
+.over-list-slider-radio img{
+    border-radius: 50%;
+}
+.over-list-hidden-zoom-radio{
+    border-radius: 50%;
+    overflow: initial;
+}
+.over-list-hidden.radio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.over-list-hidden.radio .over-list-hidden-hover{
+    border-radius: 50%;
+}
+.over-list-slider.over-list-slider-radio {
+    width: 16.6666%;
+}
+.row__item-frame {
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: rotate(270deg);
+}
+.radioimgmini {
+    width: 36%;
+    position: absolute;
+    top: 60%;
+    z-index: 2;
+    right: 0%;
+}
+.over-list-slider.over-list-slider-radio:hover img{
+    transform: scale(1);
+}
+img.radio__live-img {
+    width: 100%;
+    border-radius: 0;
+}
+.radio__live {
+    position: absolute;
+    width: 25%;
+    top: 92%;
+    left: 40%;
+    z-index: 2;
 }

@@ -24,6 +24,7 @@ const listtheme={
                     progressactive:'#fff', // màu thanh thời gian bài hát đang phát,
                     progressplayer:'hsla(0,0%,100%,0.3)',// màu thanh tổng thời gian bài hát
                     searchtext:'#eee',
+                    bgrtheme:'#883236',
                     bgrimgfooter:'',
                 }
             }
@@ -49,6 +50,7 @@ const listtheme={
                     progressactive:'#aa1c1c', // màu thanh thời gian bài hát đang phát,
                     progressplayer:'rgba(0,0,0,0.1)',// màu thanh tổng thời gian bài hát
                     searchtext:'#eee',
+                    bgrtheme:'#fff',
                     bgrimgfooter:'',
                 }
             }
@@ -73,6 +75,7 @@ const listtheme={
                     progressactive:'#6b3483', // màu thanh thời gian bài hát đang phát,
                     progressplayer:'rgba(0,0,0,0.1)',// màu thanh tổng thời gian bài hát
                     searchtext:'#eee',
+                    bgrtheme:'#fff',
                     bgrimgfooter:'',
                 }
             }
@@ -98,6 +101,7 @@ const listtheme={
                     progressactive:'#fff', // màu thanh thời gian bài hát đang phát,
                     progressplayer:'hsla(0,0%,100%,0.3)',// màu thanh tổng thời gian bài hát
                     searchtext:'#eee',
+                    bgrtheme:'#6a39af',
                     bgrimgfooter:'',
                 }
             }
@@ -122,6 +126,8 @@ const listtheme={
                     searchhover:'#7c7f802b',
                     progressactive:'#409abc',
                     progressplayer:'rgba(0,0,0,0.1)',
+                    bgrtheme:'#fff',
+
                 }
             }
         },
@@ -146,6 +152,7 @@ const listtheme={
                     progressactive:'#346875', // màu thanh thời gian bài hát đang phát,
                     progressplayer:'rgba(0,0,0,0.1)',// màu thanh tổng thời gian bài hát
                     searchtext:'#eee',
+                    bgrtheme:'#e2e7f5',
                     bgrimgfooter:'',
                 }
             }
@@ -171,6 +178,8 @@ const listtheme={
                     progressactive:'#239292', // màu thanh thời gian bài hát đang phát,
                     progressplayer:'rgba(0,0,0,0.1)',// màu thanh tổng thời gian bài hát
                     searchtext:'#eee',
+                    bgrtheme:'#e1e8e8',
+
                     bgrimgfooter:'',
                 }
             }
@@ -181,6 +190,25 @@ const listtheme={
             imgmini:'./acset/background-mini/jisoo.jpg',
             theme:{
                 bgr:'./acset/background/jisoo.jpg',
+                colors:{
+                    headerbgr:'#fff', //màu nền đầu trang
+                    textcolor:'#000',  //màu chữ
+                    footerbgr:'#fff', //  màu chân trang
+                    activebgr:'rgba(0,0,0,0.05)', // màu bài hát đg phát
+                    overviewbgr:'#fff', // màu nền thanh tổng quan
+                    searchhistorybgr:'#fff', // màu nền lịch sử tìm kiếm bài hát
+                    linkcolortext:'rgba(50,50,61,0.5)',// chữ tên ca sĩ ,tổng thời gian bài hát
+                    bgrcolor:'rgba(0,0,0,0.05)',// màu nền phần body trái
+                    hearfill:'#6b3483', // màu trái tim 
+                    listoverview:'#6b3483', // màu chữ thanh tổng quan
+                    searchhover:'#6274743d', // nền khi hover lịch sử bài hát
+                    progressactive:'#6b3483', // màu thanh thời gian bài hát đang phát,
+                    progressplayer:'rgba(0,0,0,0.1)',// màu thanh tổng thời gian bài hát
+                    searchtext:'#eee',
+                    bgrtheme:'#fff',
+
+                    bgrimgfooter:'',
+                }
             }
         },
         {
@@ -189,6 +217,25 @@ const listtheme={
             imgmini:'./acset/background-mini/lisa.jpg',
             theme:{
                 bgr:'./acset/background/lisa.jpg',
+                colors:{
+                    headerbgr:'none', //màu nền đầu trang
+                    textcolor:'#000',  //màu chữ
+                    footerbgr:'#f9dbdb', //  màu chân trang
+                    activebgr:'rgba(0,0,0,0.05)', // màu bài hát đg phát
+                    overviewbgr:'hsla(0,0%,100%,0.3)', // màu nền thanh tổng quan
+                    searchhistorybgr:'#fff', // màu nền lịch sử tìm kiếm bài hát
+                    linkcolortext:'rgba(50,50,61,0.5)',// chữ tên ca sĩ ,tổng thời gian bài hát
+                    bgrcolor:'hsla(0,0%,100%,0.3)',// màu nền phần body trái
+                    hearfill:'#ea7aa0', // màu trái tim 
+                    listoverview:'#ea7aa0', // màu chữ thanh tổng quan
+                    searchhover:'#6274743d', // nền khi hover lịch sử bài hát
+                    progressactive:'#ea7aa0', // màu thanh thời gian bài hát đang phát,
+                    progressplayer:'rgba(0,0,0,0.1)',// màu thanh tổng thời gian bài hát
+                    searchtext:'#eee',
+                    bgrtheme:'#fff8f8',
+                    bgrimgfooter:'',
+                }
+
             }
         },
         {
@@ -211,6 +258,7 @@ const listtheme={
                     searchhover:'#ffffff4a',
                     progressactive:'#fff',
                     progressplayer:'hsla(0,0%,100%,0.3)',
+                    bgrtheme:'#192f60',
                 }
             }
         },
@@ -301,6 +349,7 @@ const listtheme={
         document.documentElement.style.setProperty('--search-hover', _this.currentBgr.theme.colors.searchhover)
         document.documentElement.style.setProperty('--progress-active', _this.currentBgr.theme.colors. progressactive)
         document.documentElement.style.setProperty('--progress-player', _this.currentBgr.theme.colors.progressplayer)
+        document.documentElement.style.setProperty('--bgr-theme', _this.currentBgr.theme.colors.bgrtheme)
        
     }
     ,
