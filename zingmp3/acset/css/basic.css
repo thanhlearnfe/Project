@@ -140,3 +140,31 @@ i.bi.bi-caret-right-fill {
 .body-scroll.active{
     display: block;
 }
+.slick-prev {
+    left: 0%;
+    z-index: 2;
+}
+.slick-prev:before, .slick-next:before{
+    font-family: bootstrap-icons;
+    font-size: 30px;
+    color: #000;
+}
+.slick-prev:before{
+    content:'\f284';
+    font-size: 18px;
+}
+.slick-next:before{
+    content:'\f285';
+    font-size: 18px;
+}
+.slick-next, .slick-prev{
+    height: 38px;
+    width: 38px;
+    background-color: #fff !important;
+    border-radius: 50%;
+    top:40%;
+}
+
+.slick-next {
+    right: 0%;
+}

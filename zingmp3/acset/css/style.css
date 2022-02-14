@@ -47,13 +47,13 @@ body::-webkit-scrollbar{
     will-change: scroll-position;
     padding-right: 30px;
     display: none;
-
+    padding-left: 30px;
 }
 #body{
     display:flex;
     height: calc(100vh - 160px);
     margin-left: 240px;
-    padding: 0 60px;
+    padding: 0 30px;
     padding-right: 0;
     flex-direction: column;
     /* overflow: scroll;
@@ -995,6 +995,7 @@ span.preview:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom:0;
 }
 .over-list-hidden.radio .over-list-hidden-hover{
     border-radius: 50%;
@@ -1032,3 +1033,38 @@ img.radio__live-img {
     left: 40%;
     z-index: 2;
 }
+.over-lyrics2.zingchart{
+    margin: 0 -12px;
+    display:flex;
+    margin-top: 20px;
+}
+.zingchart__week {
+    width: 33.3333333333%;
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 0 12px;
+}
+.zingchart__week img{
+    width: 100%;
+    border-radius: 8px;
+    transition-duration: 0.5s;
+}
+.zingchart__week img:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+}
+.over-list-container.over-lyrics2.singer {
+    display: flex;
+    margin: 0 -12px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.singger__top {
+    display: flex;
+    width: 16.6666%;
+    padding: 0 12px;
+}
+.singger__top img{
+    width: 100%;
+}
+
