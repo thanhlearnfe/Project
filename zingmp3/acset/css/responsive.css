@@ -86,6 +86,7 @@
     #body{
         margin-left: 0;
         padding-left:0;
+        height: calc(100vh - 192px);
     }
     .background_them {
         padding: 0 30px;
@@ -152,5 +153,42 @@
     }
     .over-list-slider {
         width: 50%;
+    }
+    .row {
+        OVERFLOW: hidden;
+        height: 165px;
+        padding-right: 10px;
+
+    }
+    .explore__slide-item{
+        top: 47%;
+        width: 78%;
+    }
+    .body-scroll2{
+        padding-right: 0;
+    }
+    .partner-item{
+        width: 33.3333%;
+    }
+    .over-lyrics2.zingchart{
+        flex-wrap: wrap;
+    }
+    .zingchart__week{
+        width: 90%;
+    }
+    .overview-list.none {
+        display: none;
+    }
+    .overview-list{
+        padding: 7px 17px;
+    }
+    .over-lists-songs{
+        margin-left: 0;
+    }
+    .tabs-content-updata{
+        padding: 6px 9px;
+    }
+    .over-list-slider.mv {
+        width: 100%;
     }
 }

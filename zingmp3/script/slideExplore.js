@@ -1,5 +1,5 @@
 $('.over-lists-slider2.radio').slick({
-    infinite: false,
+    infinite: true,
     speed: 1000,
     slidesToShow: 6,
     slidesToScroll: 4,
@@ -18,14 +18,18 @@ $('.over-lists-slider2.radio').slick({
         breakpoint: 1024,
         settings: {
           slidesToShow: 4,
-          slidesToScroll: 4
+          slidesToScroll: 4,
+          infinite: false
+
         }
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: false
+
         }
       }
       // You can unslick at a given breakpoint now by adding:
