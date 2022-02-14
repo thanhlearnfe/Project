@@ -17,6 +17,7 @@ const prevsong = $('.btn-prev');
 const songsactive = $('.over-lists-songs')
 const songsactive2 = $('.over-lists-songs-2');
 const volume = $('.volume')
+const volumetua=$('input.volume')
 const app ={
     curentindex:0,
     isPlaying:false,
@@ -367,6 +368,13 @@ const app ={
             var color =  'linear-gradient(90deg, var(--progress-active) ' + `${timenow}` + '% , var(--progress-player)' + `${timenow}` + '%)';
             progress.style.background = color;
             
+        }
+        volumetua.oninput = function(e){
+            const seek = 1 / 100 * e.target.value;    
+            audio.volume = seek;
+            const timenow =  e.target.value;
+            var color =  'linear-gradient(90deg, var(--progress-active) ' + `${timenow}` + '% , var(--progress-player)' + `${timenow}` + '%)';
+            volumetua.style.background = color;
         }
         audio.onloadeddata = function(){
             var seconds = Math.floor((audio.duration%60))

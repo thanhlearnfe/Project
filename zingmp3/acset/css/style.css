@@ -419,6 +419,7 @@ i.bi.bi-heart-fill {
 .btn-lyric.volume {
     display: flex;
     align-items: center;
+    width: 15%;
 }
 .progress {
   width: 100%;
@@ -438,15 +439,17 @@ i.bi.bi-heart-fill {
   border-radius: 50%;
 }
 .volume{
-    width: 55%;
+    width: 30%;
     -webkit-appearance: none;
-    height: 2px;
     outline: none;
     opacity: 0.7;
     -webkit-transition: 0.2s;
     transition: opacity 0.2s;
     border-radius: 4px;
+}
+input.volume{
     background: var(--progress-player);
+    margin-right: 15px;
 }
 .volume::-webkit-slider-thumb{
     -webkit-appearance: none;
