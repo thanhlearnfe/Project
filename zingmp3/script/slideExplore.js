@@ -1,6 +1,6 @@
 $('.over-lists-slider2.radio').slick({
     infinite: false,
-    speed: 300,
+    speed: 1000,
     slidesToShow: 6,
     slidesToScroll: 4,
     autoplay: true,
