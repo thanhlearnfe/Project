@@ -53,7 +53,7 @@
 @media(max-width:400px){
     #footer{
         bottom:54px;
-        height: 7rem;
+        height: 5rem;
     }
     .body-left {
         width: 100%;
@@ -73,6 +73,7 @@
     }
     .nav-bar-active{
         width: 25%;
+        padding: 10px 0;
     }
     .line-width{
         display: none;
@@ -188,7 +189,13 @@
     .tabs-content-updata{
         padding: 6px 9px;
     }
+    .tabs-content-playall{
+        padding: 6px 9px;
+    }
     .over-list-slider.mv {
         width: 100%;
+    }
+    .image-current img{
+        height: 4.4rem;
     }
 }
