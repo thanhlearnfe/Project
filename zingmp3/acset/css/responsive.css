@@ -53,6 +53,7 @@
 @media(max-width:400px){
     #footer{
         bottom:54px;
+        height: 7rem;
     }
     .body-left {
         width: 100%;
@@ -84,6 +85,7 @@
     }
     #body{
         margin-left: 0;
+        padding-left:0;
     }
     .background_them {
         padding: 0 30px;
@@ -92,5 +94,63 @@
     }
     .background_them-body {
         width: 100%;
+    }
+    .header-content {
+        display: none;
+    }
+    .avata-updata{
+        display: none;
+    }
+    .over-lists-songs-2{
+        padding-left:0;
+    }
+    .list-song-album {
+        display: none;
+    }
+    .footer__.lyrics {
+        display: none;
+    }
+    .control-input-group{
+        display: none;
+    }
+    .btn.btn-random {
+        display: none;
+    }
+    .btn.btn-repeat{
+        display: none;
+    }
+    .btn.btn-prev{
+        display: none;
+    }
+    .footer__.song{
+        width: 70%;
+    }
+    .footer__control{
+        width: 30%;
+        align-items: flex-start;
+    }
+    .image-current img{
+        border-radius: 50%;
+    }
+    .footer__song-.songname{
+        width: 100%;
+    }
+    .footer__song-.like .bi.bi-three-dots{
+        display:none;
+    }
+    .footer__song-name{
+        font-size: 1.5rem;
+    }
+    .footer__song-singer{
+        font-size: 1.5rem;
+    }
+    .footer__btn{
+        margin-bottom:0;
+    }
+    .over-list-animation{
+        display:none;
+    }
+    .over-list-slider {
+        width: 50%;
     }
 }
