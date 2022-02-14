@@ -87,7 +87,7 @@
     #body{
         margin-left: 0;
         padding-left:0;
-        height: calc(100vh - 192px);
+        height: calc(100vh - 177px);
     }
     .background_them {
         padding: 0 30px;
@@ -197,5 +197,14 @@
     }
     .image-current img{
         height: 4.4rem;
+    }
+    .body-scroll{
+        padding-right: 0;
+    }
+    .hover__view-all-content {
+        display: none;
+    }
+    .over-list-container.over-lyrics {
+        margin-top: 20px;
     }
 }
