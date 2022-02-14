@@ -41,6 +41,7 @@ const searchInput = $('.header-search-border input');
 searchInput.onclick = function() {
     $('.history-search').classList.add('active');
     $('.header-search-border').style.background = 'var( --history-search-bgr)';
+    $('.header-acount').style.display = 'none';
 }
 
 //Hieu ung chuyen anh

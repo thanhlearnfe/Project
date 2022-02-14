@@ -207,4 +207,19 @@
     .over-list-container.over-lyrics {
         margin-top: 20px;
     }
+    .over-list-slider.none{
+        display: none;
+    }
+    .over-list-hidden{
+        margin-bottom: 0;
+    }
+    .header-acount-border.none{
+        display: none;
+    }
+    .header-search-border{
+        width: 100%;
+    }
+    .history-search{
+        width: 100%;
+    }
 }

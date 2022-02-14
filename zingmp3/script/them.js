@@ -397,6 +397,8 @@ $('#body').onclick = function(){
     $('.history-search').classList.remove('active');
     $('.header-search-border').style.background = 'var(--active-bgr)';
     background.style.display = 'none';
+    $('.header-acount').style.display = 'flex';
+
 }
 const isThemes=false;
 /* clicktets.onclick = function(){
